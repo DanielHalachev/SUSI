@@ -1,0 +1,47 @@
+nav ul{
+  list-style: none;
+}
+
+nav li {
+  display: inline-block;
+  transition-duration: 0.5s;
+  padding: 20px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav li:hover {
+  cursor: pointer;
+  background: #dda;
+}
+
+nav ul li ul {
+  background: #ddd;
+  visibility: hidden;
+  opacity: 0;
+  min-width: 10rem;
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 1rem;
+  left: 0;
+  display: none;
+}
+
+nav ul li:hover > ul,
+/* applies style to parent even when children are in focus */
+nav ul li:focus-within > ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li ul li {
+  clear: both;
+  width: 100%;
+}
+
+/* do not apply outline on <a> when focusing via the link */
+nav li:focus-within a {
+  outline: none;
+}
