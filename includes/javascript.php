@@ -1,1 +1,5 @@
-<script src="./../../js/footer.js" type="text/javascript"></script>
+<script>
+  <?php
+    include "js/footer.js";
+  ?>
+</script>

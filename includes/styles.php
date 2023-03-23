@@ -1,3 +1,7 @@
-<link rel="stylesheet" type="text/css" href="./../../css/common.css"/>
-<link rel="stylesheet" type="text/css" href="./../../css/header.css"/>
-<link rel="stylesheet" type="text/css" href="./../../css/footer.css"/>
+<style>
+  <?php
+    include "css/common.css";
+    include "css/header.css";
+    include "css/footer.css";
+  ?>
+</style>
