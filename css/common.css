@@ -1,0 +1,41 @@
+/* Reset default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Set background color and font styles */
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+  display: flex;
+  flex-flow:column;
+  justify-content: flex-start;
+}
+
+/* Header styles */
+header {
+  background-color: #fff;
+  /* padding: 20px; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header h1 {
+  font-size: 24px;
+  margin: 15px;
+}
+
+/* Main section styles */
+main {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 0px auto;
+  width:100%;
+  padding:30px;
+}
