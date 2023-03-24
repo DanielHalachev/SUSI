@@ -1,5 +1,14 @@
+nav {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
 nav ul{
   list-style: none;
+  display: flex;
+  flex-flow: row;
+  flex-flow: wrap;
 }
 
 nav li {
@@ -15,6 +24,10 @@ nav li:hover {
   background: #dda;
 }
 
+nav li a:hover {
+  text-decoration: none;
+}
+
 nav ul li ul {
   background: #ddd;
   visibility: hidden;
@@ -22,7 +35,7 @@ nav ul li ul {
   min-width: 10rem;
   position: absolute;
   transition: all 0.5s ease;
-  margin-top: 1rem;
+  margin-top: 20px;
   left: 0;
   display: none;
 }
@@ -44,4 +57,102 @@ nav ul li ul li {
 /* do not apply outline on <a> when focusing via the link */
 nav li:focus-within a {
   outline: none;
+}
+
+@media screen and (max-width: 768px) {
+  nav ul li ul:hover {
+    opacity: 1;
+    display: block;
+  }
+}
+
+.menu-button {
+  /* display: none; */
+  justify-content: center;
+  align-items: center;
+  padding: 15px;
+  color: #333;
+}
+
+.menu-button img {
+  height: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  .menu-button {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #ddd;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #ccc;
+  }
+
+  nav li:last-child {
+    border-bottom: none;
+  }
+
+  .menu-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo,
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav .menu-button {
+    order: 1;
+  }
+
+  nav ul {
+    order: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 10px 0;
+  }
+
+  nav ul li ul {
+    position: static;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    background: none;
+    margin-top: 0;
+  }
+
+  nav ul li:hover ul,
+  nav ul li:focus-within ul,
+  nav ul li ul:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+}
+
+nav ul.show {
+  display:block;
 }
