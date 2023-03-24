@@ -6,37 +6,90 @@ main {
   padding: 20px;
 }
 
-section {
+.cluster {
+  display: flex;
+  flex-flow: column;
   width: 100%;
-  max-width: 500px;
+  max-width: 450px;
+  max-height: 450px;
   background-color: white;
   border-radius: 10px;
+  padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   overflow: hidden;
 }
 
-h2 {
+.cluster h2 {
   font-size: 24px;
   font-weight: 700;
   color: #333;
   margin: 0;
-  padding: 20px;
-  background-color: #f5f5f5;
+  /* margin-bottom: auto; */
+  padding: 20px 0px;
+  /* background-color: #f5f5f5; */
 }
 
-table {
+.cluster h3 {
+  /* font-size: 24px; */
+  /* font-weight: 700; */
+  color: #333;
+  /* margin: 0; */
+  /* background-color: #f5f5f5; */
+  padding: 10px 0px;
+}
+
+.cluster h2 a {
+  text-decoration: none;
+  color: black;
+}
+
+.cluster h2 a:hover {
+  text-decoration: underline;
+}
+
+.cluster table {
   width: 100%;
   border-collapse: collapse;
 }
 
-th,
+.cluster th,
 td {
   padding: 10px;
   text-align: center;
   border: 1px solid #ccc;
 }
 
-th {
+.cluster th {
   background-color: #f5f5f5;
   font-weight: 700;
+}
+
+.paid {
+  background: palegreen;
+  border: none;
+  padding: 5px;
+  margin: 0px;
+}
+
+.unpaid {
+  background-color: red;
+  color: white;
+  border: none;
+  padding: 5px;
+  margin: 0px;
+}
+
+.unpaid:hover {
+  background: orangered;
+}
+
+.message-list {
+  list-style: none;
+}
+
+.message {
+  display: block;
+  border: 1px solid red;
+  margin: 5px;
+  padding: 5px;
 }
