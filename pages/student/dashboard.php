@@ -7,12 +7,9 @@ include "./../../includes/javascript.php"
 <link rel="stylesheet" type="text/css" href="./../../css/dashboard.css"/>
 </head>
 <body>
-<header>
-<h1>Logo</h1>
 <?php
 include "./../../includes/header.php"
 ?>
-</header>
 <main>
   <div id="timetable" class="cluster">
     <h2 class="cluster-title"><a href="#">Разписание на занятията</a></h2>
