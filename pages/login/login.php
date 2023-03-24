@@ -1,4 +1,5 @@
-<html>
+<!DOCTYPE html>
+<html lang="bg">
 <head>
 
   <link rel="stylesheet" type="text/css" href="./../../css/login.css"/>
