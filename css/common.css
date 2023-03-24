@@ -19,6 +19,9 @@ header {
   background-color: #fff;
   /* padding: 20px; */
   display: flex;
+  position: sticky;
+  top: 0;
+  padding: 0px 15px;
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #ccc;
@@ -33,7 +36,6 @@ header h1 {
 
 header .logo {
   height: 50px;
-  margin-left: 10px;
 }
 
 /* Main section styles */
