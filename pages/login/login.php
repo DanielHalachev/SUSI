@@ -11,7 +11,7 @@
 </head>
 <body>
   <header>
-    <h1>Logo</h1>
+    <img class="logo" src="./../../images/logo.png"/>
   </header>
   <main>
     <div class="item">
