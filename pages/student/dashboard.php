@@ -21,53 +21,51 @@ include "./../../includes/header.php"
         <thead>
           <tr>
             <th>Дисциплина</th>
-            <th>Преподавател</th>
-            <th>Време</th>
+            <th>Място</th>
+            <th>Начало</th>
           </tr>
         </thead>
         <tbody>
           <tr>
             <td>Увод в програмирането</td>
-            <td>Иван Иванов</td>
-            <td>13:00 - 15:00</td>
+            <td>ФМИ, 200</td>
+            <td>13:00</td>
           </tr>
           <tr>
             <td>Английски език</td>
-            <td>Мария Петрова</td>
-            <td>15:15 - 17:15</td>
+            <td>ФМИ, 313</td>
+            <td>15:15</td>
           </tr>
           <tr>
-            <td>Приятна почивка</td>
-            <td></td>
-            <td></td>
+            <td>Бази данни</td>
+            <td>ФМИ, 325</td>
+            <td>16:00</td>
           </tr>
         </tbody>
       </table>
     </div>
   </div>
-  <div class="messages">Messages</div>
-  <div class="elective">Elective</div>
   <div class="cluster">
     <h2><a href="#">Taxes</a></h2>
     <div class="content">
       <table>
         <thead>
           <tr>
-            <th>Name</th>
-            <th>Amount</th>
-            <th>Action</th>
+            <th>Такса</th>
+            <th>Сума</th>
+            <th>Статус</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>Semester tax</td>
-            <td>200.00</td>
+            <td>Семестриална такса</td>
+            <td>450лв.</td>
             <td><button class="paid">Платена</button></td>
           </tr>
           <tr>
             <td>Exam retake tax</td>
             <td>50.00</td>
-            <td><a href="#" class="unpaid">Плати</a></td>
+            <td><button href="#" class="unpaid">Плати</button></td>
           </tr>
         </tbody>
       </table>
@@ -82,7 +80,7 @@ include "./../../includes/header.php"
           <thead>
             <tr>
               <th>Име</th>
-              <th>Marked</th>
+              <th>Маркер</th>
             </tr>
           </thead>
           <tbody>
@@ -115,34 +113,31 @@ include "./../../includes/header.php"
             </tr>
           </thead>
           <tbody>
-            <tr><th>Фрактали</th></tr>
-            <tr><th>Увод в статистиката</th></tr>
+            <tr><td>Фрактали</td></tr>
+            <tr><td>Увод в статистиката</td></tr>
           </tbody>
         </table>
       </div>
     </div>
   </div>
   <div class="cluster">
-    <h2><a href="#">Messages</a></h2>
+    <h2><a href="#">Съобщения</a></h2>
     <div class="content">
       <ul>
         <li>
-          <a href="#">John sent you a message</a>
-          <p>Hey, did you understand the homework for Math class?</p>
-          <small>2 hours ago</small>
+          <a href="#">Добре дошли в курса по Джава</a>
+          <p>Евгений Кръстев</p>
+          <small>Преди 2 часа</small>
         </li>
         <li>
-          <a href="#">Jane sent you a message</a>
-          <p>Hi, can I borrow your notes from History class?</p>
-          <small>Yesterday</small>
+          <a href="#">Провеждане на курса по Увод в програмирането</a>
+          <p>Александър Димов</p>
+          <small>Вчера</small>
         </li>
         <li>
-          <a href="#">David sent you a message</a>
-          <p>Do you want to form a study group for Science class?</p>
-          <small>Last week</small>
-        </li>
-        <li>
-          <p>Няма съобщения</p>
+          <a href="#">Гост-лектор</a>
+          <p>Боян Бончев<p>
+          <small>19.03, 9:00</small>
         </li>
       </ul>
     </div>
