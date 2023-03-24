@@ -1,5 +1,5 @@
 <header>
-  <img class="logo" src="./../../images/logo.png"/>
+  <a href="./dashboard.php"><img class="logo" src="./../../images/logo.png"/></a>
   <nav role="navigation">
     <ul>
       <li><a>График</a></li>
