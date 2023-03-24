@@ -38,12 +38,57 @@ include "./../../includes/header.php"
             <td>ФМИ, 325</td>
             <td>16:00</td>
           </tr>
+          <tr>
+            <td>Увод в програмирането</td>
+            <td>ФМИ, 200</td>
+            <td>13:00</td>
+          </tr>
+          <tr>
+            <td>Английски език</td>
+            <td>ФМИ, 313</td>
+            <td>15:15</td>
+          </tr>
+          <tr>
+            <td>Бази данни</td>
+            <td>ФМИ, 325</td>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>Увод в програмирането</td>
+            <td>ФМИ, 200</td>
+            <td>13:00</td>
+          </tr>
+          <tr>
+            <td>Английски език</td>
+            <td>ФМИ, 313</td>
+            <td>15:15</td>
+          </tr>
+          <tr>
+            <td>Бази данни</td>
+            <td>ФМИ, 325</td>
+            <td>16:00</td>
+          </tr>
+          <tr>
+            <td>Увод в програмирането</td>
+            <td>ФМИ, 200</td>
+            <td>13:00</td>
+          </tr>
+          <tr>
+            <td>Английски език</td>
+            <td>ФМИ, 313</td>
+            <td>15:15</td>
+          </tr>
+          <tr>
+            <td>Бази данни</td>
+            <td>ФМИ, 325</td>
+            <td>16:00</td>
+          </tr>
         </tbody>
       </table>
     </div>
   </div>
   <div class="cluster">
-    <h2><a href="#">Taxes</a></h2>
+    <h2><a href="#">Такси</a></h2>
     <div class="content">
       <table>
         <thead>
@@ -120,23 +165,24 @@ include "./../../includes/header.php"
   <div class="cluster">
     <h2><a href="#">Съобщения</a></h2>
     <div class="content">
-      <ul>
-        <li>
+      <ul class="message-list">
+        <li class="message">
           <a href="#">Добре дошли в курса по Джава</a>
           <p>Евгений Кръстев</p>
           <small>Преди 2 часа</small>
         </li>
-        <li>
+        <li class="message">
           <a href="#">Провеждане на курса по Увод в програмирането</a>
           <p>Александър Димов</p>
           <small>Вчера</small>
         </li>
-        <li>
+        <li class="message">
           <a href="#">Гост-лектор</a>
           <p>Боян Бончев<p>
           <small>19.03, 9:00</small>
         </li>
       </ul>
+    </div>
     </div>
     <div class="cluster">
       <h2><a href="#">Оценки</a></h2>
@@ -174,7 +220,6 @@ include "./../../includes/header.php"
         </table>
       </div>
     </div>
-  </div>
 </main>
 <!-- footer -->
 <?php
