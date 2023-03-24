@@ -1,6 +1,7 @@
 <header>
   <a href="./dashboard.php"><img class="logo" src="./../../images/logo.png"/></a>
   <nav role="navigation">
+    <div class="menu-button"><img src="./../../images/menu.png"/></div>
     <ul>
       <li><a>График</a></li>
       <li><a>Такси</a></li>
