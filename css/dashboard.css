@@ -54,23 +54,23 @@ main {
   text-decoration: underline;
 }
 
-.cluster table {
-  width: 100%;
-  border-collapse: collapse;
-  overflow: auto;
-}
-
-.cluster th,
-td {
-  padding: 10px;
-  text-align: center;
-  border: 1px solid #ccc;
-}
-
-.cluster th {
-  background-color: #f2f2f2;
-  font-weight: 700;
-}
+/* table { */
+/*   width: 100%; */
+/*   border-collapse: collapse; */
+/*   overflow: auto; */
+/* } */
+/**/
+/* th, */
+/* td { */
+/*   padding: 10px; */
+/*   text-align: center; */
+/*   border: 1px solid #ccc; */
+/* } */
+/**/
+/* th { */
+/*   background-color: #f2f2f2; */
+/*   font-weight: 700; */
+/* } */
 
 .cluster .payment-status {
   padding: 0px;
