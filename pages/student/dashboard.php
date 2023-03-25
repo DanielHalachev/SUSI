@@ -179,18 +179,18 @@ include "./../../includes/header.php"
       <ul class="message-list">
         <li class="message">
           <a href="#">Добре дошли в курса по Джава</a>
-          <p>Евгений Кръстев</p>
+          <br/><small>Евгений Кръстев</small>,
           <small>Преди 2 часа</small>
         </li>
         <li class="message">
           <a href="#">Провеждане на курса по Увод в програмирането</a>
-          <p>Александър Димов</p>
+          <br/><small>Александър Димов</small>,
           <small>Вчера</small>
         </li>
         <li class="message">
           <a href="#">Гост-лектор</a>
-          <p>Боян Бончев<p>
-          <small>19.03, 9:00</small>
+          <br/><small>Боян Бончев</small>,
+          <small>19.03 9:00</small>
         </li>
       </ul>
     </div>
