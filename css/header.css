@@ -32,12 +32,24 @@ nav ul li ul {
   background: #ddd;
   visibility: hidden;
   opacity: 0;
-  min-width: 10rem;
+  /* min-width: 300px; */
   position: absolute;
   transition: all 0.5s ease;
   margin-top: 20px;
   left: 0;
   display: none;
+}
+
+nav ul li .user-dropdown {
+  right: 0;
+  left:auto;
+  min-width: 300px;
+}
+
+nav ul li .user-dropdown p {
+  color: #333;
+  cursor: auto;
+  padding: 0px 10px;
 }
 
 nav ul li:hover > ul,
@@ -52,18 +64,12 @@ nav ul li ul:hover {
 nav ul li ul li {
   clear: both;
   width: 100%;
+  padding: 15px;
 }
 
 /* do not apply outline on <a> when focusing via the link */
 nav li:focus-within a {
   outline: none;
-}
-
-@media screen and (max-width: 768px) {
-  nav ul li ul:hover {
-    opacity: 1;
-    display: block;
-  }
 }
 
 .menu-button {
@@ -132,7 +138,7 @@ nav li:focus-within a {
 
   nav ul li {
     display: block;
-    margin: 10px 0;
+    margin: 0;
   }
 
   nav ul li ul {
@@ -141,7 +147,11 @@ nav li:focus-within a {
     visibility: hidden;
     opacity: 0;
     background: none;
-    margin-top: 0;
+    margin-top: 10;
+  }
+
+  nav ul li:hover ul li:last-child {
+    padding-bottom: 0px;
   }
 
   nav ul li:hover ul,
@@ -151,8 +161,27 @@ nav li:focus-within a {
     visibility: visible;
     opacity: 1;
   }
+
+  #username p, #username br, #username hr {
+    display: none;
+  }
+
+  #username {
+    background-color: #ddd;
+  }
 }
 
 nav ul.show {
   display:block;
 }
+
+@media (min-width:768px) { 
+  #username {
+    background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+  }
+}
+
+#username:hover {
+  background: #dda;
+}
+
