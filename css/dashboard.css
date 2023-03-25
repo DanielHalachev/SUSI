@@ -5,6 +5,8 @@ main {
   gap: 20px;
   padding: 20px;
   background-color: #ccc;
+  flex-grow: 1;
+  min-height: calc(100vh - 108px);
 }
 
 .cluster {
@@ -111,7 +113,13 @@ td {
   margin: 5px;
   padding: 5px;
   background-color: #f2f2f2;
+  text-align: left;
 }
+
+.message a {
+  font-weight: 600;
+}
+
 
 @media screen and (max-width: 768px) {
   main .cluster {
