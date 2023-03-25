@@ -1,0 +1,6 @@
+main {
+  flex-flow: column;
+  justify-content: center;
+  min-height: calc(100vh - 108px);
+  /* background-color: white; */
+}
