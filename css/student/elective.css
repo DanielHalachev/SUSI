@@ -1,6 +1,21 @@
 main {
   flex-flow: column;
+  flex-wrap: wrap;
   justify-content: center;
-  min-height: calc(100vh - 108px);
-  /* background-color: white; */
+  /* min-height: calc(100vh - 108px); */
+}
+
+main input[type="search"],
+main div{
+  width:100%;
+  overflow: auto;
+}
+.optional-headers {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+.optional-headers input[type="checkbox"] {
+  margin: 5px 10px 5px 20px;
 }

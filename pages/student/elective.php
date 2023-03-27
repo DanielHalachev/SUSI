@@ -14,8 +14,7 @@
     <main>
       <h1>Избираеми дисциплини</h1>
       <input type="search" placeholder="Потърсете избираема дисциплина"/>
-      <table>
-        <tr>
+      <div class="optional-headers">
           <td><label><input type="checkbox"/>Име</label></td>
           <td><label><input type="checkbox"/>Преподавател</label></td>
           <td><label><input type="checkbox"/>Кредити</label></td>
@@ -24,10 +23,12 @@
           <td><label><input type="checkbox"/>Рейтинг</label></td>
           <td><label><input type="checkbox"/>Маркиране</label></td>
           <td><label><input type="checkbox"/>Записване</label></td>
-        </tr>
-      </table>
+      </div>
+      <br/>
       <hr/>
-      <table>
+      <br/>
+      <div>
+        <table>
         <thead>
         <tr>
           <th>Име</th>
@@ -49,7 +50,7 @@
   <td>1</td>
   <td>4.6</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="positive">Записване</button></td>
 </tr>
 <tr>
   <td>Английски език 1</td>
@@ -59,7 +60,7 @@
   <td>1</td>
   <td>4.3</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="positive">Записване</button></td>
 </tr>
 <tr>
   <td>Основи на базите данни</td>
@@ -69,7 +70,7 @@
   <td>2</td>
   <td>4.5</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="negative">Отписване</button></td>
 </tr>
 <tr>
   <td>Криптография</td>
@@ -79,7 +80,7 @@
   <td>4</td>
   <td>4.8</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване в опашка</button></td>
+  <td><button class="neutral">Записване в опашка</button></td>
 </tr>
 <tr>
   <td>Интернет програмиране</td>
@@ -89,7 +90,7 @@
   <td>3</td>
   <td>4.4</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="positive">Записване</button></td>
 </tr>
 <tr>
   <td>Дискретни структури</td>
@@ -99,7 +100,7 @@
   <td>2</td>
   <td>4.5</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване в опашка</button></td>
+  <td><button class="neutral">Записване в опашка</button></td>
 </tr>
        <tr>
   <td>Увод в програмирането</td>
@@ -109,7 +110,7 @@
   <td>1</td>
   <td>4.6</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="positive">Записване</button></td>
 </tr>
 <tr>
   <td>Английски език 1</td>
@@ -119,7 +120,7 @@
   <td>1</td>
   <td>4.3</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="negative">Отписване</button></td>
 </tr>
 <tr>
   <td>Основи на базите данни</td>
@@ -129,7 +130,7 @@
   <td>2</td>
   <td>4.5</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="positive">Записване</button></td>
 </tr>
 <tr>
   <td>Криптография</td>
@@ -139,7 +140,7 @@
   <td>4</td>
   <td>4.8</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване в опашка</button></td>
+  <td><button class="positive">Записване в опашка</button></td>
 </tr>
 <tr>
   <td>Интернет програмиране</td>
@@ -149,7 +150,7 @@
   <td>3</td>
   <td>4.4</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване</button></td>
+  <td><button class="positive">Записване</button></td>
 </tr>
 <tr>
   <td>Дискретни структури</td>
@@ -159,10 +160,11 @@
   <td>2</td>
   <td>4.5</td>
   <td><input type="checkbox"/></td>
-  <td><button class="enroll-btn">Записване в опашка</button></td>
+  <td><button class="positive">Записване в опашка</button></td>
 </tr>
         </tbody>
-      </table>
+        </table>
+        </div>
     </main>
     <?php
       include "./../../includes/footer.php";
