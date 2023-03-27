@@ -104,12 +104,12 @@ include "./../../includes/header.php"
           <tr>
             <td>Семестриална такса</td>
             <td>450лв.</td>
-            <td class="payment-status"><a class="paid">Платена</a></td>
+            <td class="payment-status"><a class="positive">Платена</a></td>
           </tr>
           <tr>
             <td>Exam retake tax</td>
             <td>50.00</td>
-            <td class="payment-status"><a href="#" class="unpaid">Плати</a></td>
+            <td class="payment-status"><a href="#" class="negative">Плати</a></td>
           </tr>
         </tbody>
       </table>
