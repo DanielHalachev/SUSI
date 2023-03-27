@@ -79,6 +79,42 @@ button:hover {
   opacity: 0.9;
 }
 
+.positive {
+  background: green;
+  color: #fff;
+}
+
+.negative {
+  background-color: #963031;
+  color: #fff;
+}
+
+.neutral {
+  background-color: #ddd;
+  color: #333;
+}
+
+.positive, .negative, .neutral {
+  border: none;
+  padding: 5px;
+  margin: 0px auto;
+  display: block;
+  width: 90%;
+  height: 90%;
+}
+
+.positive:hover, .negative:hover, .neutral:hover {
+  text-decoration: none;
+}
+.negative:hover {
+  background: #f44336;
+}
+
+.neutral:hover {
+  background-color: #eee;
+  color: #000;
+
+}
 a {
   color: #333;
   text-decoration: none;
@@ -148,4 +184,30 @@ td {
 th {
   background-color: #f2f2f2;
   font-weight: 700;
+}
+
+input[type="text"],
+input[type="password"],
+input[type="search"]{
+  padding: 10px;
+  margin-bottom: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus{
+  border: 1px solid #dda;
+}
+
+input[type="checkbox"] {
+  padding: 10px;
+  margin: 5px;
+  /* scale: 1.5; */
+}
+
+input[type="checkbox"]:checked {
+  background-color: red;
 }

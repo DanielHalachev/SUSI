@@ -75,17 +75,17 @@ main {
 .cluster .payment-status {
   padding: 0px;
 }
-.paid {
+.positive {
   background: green;
   color: #fff;
 }
 
-.unpaid {
+.negative {
   background-color: #963031;
   color: #fff;
 }
 
-.paid, .unpaid {
+.positive, .negative {
   border: none;
   padding: 5px;
   margin: 0px auto;
@@ -94,10 +94,10 @@ main {
   height: 90%;
 }
 
-.paid:hover, .unpaid:hover {
+.positive:hover, .negative:hover {
   text-decoration: none;
 }
-.unpaid:hover {
+.negative:hover {
   background: #f44336;
 }
 
