@@ -3,17 +3,23 @@
   <nav role="navigation">
     <div class="menu-button"><img src="./../../images/menu.png"/></div>
     <ul>
-      <li><a>График</a></li>
-      <li><a>Такси</a></li>
-      <li><a aria-haspopup="true">Избираеми дисциплини</a>
+      <li><span class="fa fa-calendar-days"></span>
+        <a>График</a>
+      </li>
+      <li><span class="fa fa-money-bill-1-wave"></span>
+        <a>Такси</a>
+      </li>
+      <li><span class="fa fa-graduation-cap"></span>
+        <a aria-haspopup="true">Избираеми дисциплини</a>
         <ul class="dropdown" aria-label="submenu">
           <li><a>Списък избираеми дисциплини</a></li>
           <li><a>Предпочитани избираеми дисциплини</a></li>
           <li><a>Моите избираеми дисциплини</a></li>
         </ul>
       </li>
-      <li><a>Съобщения</a></li>
+      <li><a><span class="fa fa-envelope"></span> Съобщения</a></li>
       <li id="username">
+        <span class="fa fa-user"></span>
         <a>62547</a>
         <ul class="user-dropdown">
           <div class="user-info">
@@ -25,9 +31,15 @@
             </div>  
           </div>
           <hr/>
-          <li><a href="#">Настройки</a></li>
-          <li><a href="#">Моите данни</a></li>
-          <li><a href="#">Изход</a></li>
+          <li><span class="fa fa-gear"></span>
+            <a href="#">Настройки</a>
+          </li>
+          <li><span class="fa fa-database"></span>
+            <a href="#">Моите данни</a>
+          </li>
+          <li><span class="fa fa-power-off"></span>
+            <a href="#">Изход</a>
+          </li>
         </ul>
       </li>
     </ul>
