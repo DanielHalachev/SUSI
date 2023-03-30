@@ -29,7 +29,9 @@ nav li a:hover {
 }
 
 nav ul li ul {
-  background: #ddd;
+  background: #fff;
+  /* border: 1px solid #bbb; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   visibility: hidden;
   opacity: 0;
   /* min-width: 300px; */
@@ -98,13 +100,13 @@ nav li:focus-within a {
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #ddd;
+    background-color: #fff;
   }
 
   nav li {
     display: block;
     margin: 0;
-    border-bottom: 1px solid #ccc;
+    border-bottom: 1px solid #bbb;
   }
 
   nav li:last-child {
@@ -148,6 +150,7 @@ nav li:focus-within a {
     opacity: 0;
     background: none;
     margin-top: 10;
+    box-shadow: none;
   }
 
   nav ul li:hover ul li:last-child {
@@ -162,12 +165,13 @@ nav li:focus-within a {
     opacity: 1;
   }
 
-  #username p, #username br, #username hr {
+  .user-info, .user-info div, .user-info div p, .user-info img {
     display: none;
   }
 
   #username {
-    background-color: #ddd;
+    background-color: #fff;
+    border-bottom: 5px solid #bbb;
   }
 }
 
@@ -185,3 +189,25 @@ nav ul.show {
   background: #dda;
 }
 
+.profile-pic {
+  width: 75px;
+  height: 100px;
+  margin: 10px;
+  border: 1px solid #bbb;
+  float: left;
+  object-fit: cover;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: auto;
+}
+
+.user-info div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}

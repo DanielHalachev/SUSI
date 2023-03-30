@@ -16,11 +16,14 @@
       <li id="username">
         <a>62547</a>
         <ul class="user-dropdown">
-          <br/>
-          <p><small>Даниел Иванов Халачев</small></p>
-          <p><small>Софтуерно инженерство</small></p>
-          <p><small>Курс 3</small></p>
-          <br/>
+          <div class="user-info">
+            <img class="profile-pic" src="./../../images/profile-pic.jpg"/>
+            <div>
+            <p><small>Иван Петров Иванов</small></p>
+            <p><small>Софтуерно инженерство</small></p>
+            <p><small>Курс 3</small></p>
+            </div>  
+          </div>
           <hr/>
           <li><a href="#">Настройки</a></li>
           <li><a href="#">Моите данни</a></li>
