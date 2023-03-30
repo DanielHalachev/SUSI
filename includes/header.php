@@ -1,23 +1,29 @@
 <header>
   <a href="./dashboard.php"><img class="logo" src="./../../images/logo.png"/></a>
   <nav role="navigation">
-    <div class="menu-button"><img src="./../../images/menu.png"/></div>
+    <!-- <div class="menu-button"><img src="./../../images/menu.png"/></div> -->
+    <span id="menu-button" class="fa fa-bars"></span>
     <ul>
-      <li><span class="fa fa-calendar-days"></span>
-        <a>График</a>
+      <li>
+        <span class="fa fa-calendar-days"></span>
+        <a href="./timetable.php">График</a>
       </li>
-      <li><span class="fa fa-money-bill-1-wave"></span>
+      <li>
+        <span class="fa fa-money-bill-1-wave"></span>
         <a>Такси</a>
       </li>
-      <li><span class="fa fa-graduation-cap"></span>
-        <a aria-haspopup="true">Избираеми дисциплини</a>
+      <li>
+        <span class="fa fa-graduation-cap"></span>
+        <a href="./elective.php" aria-haspopup="true">Избираеми дисциплини</a>
         <ul class="dropdown" aria-label="submenu">
           <li><a>Списък избираеми дисциплини</a></li>
           <li><a>Предпочитани избираеми дисциплини</a></li>
           <li><a>Моите избираеми дисциплини</a></li>
         </ul>
       </li>
-      <li><a><span class="fa fa-envelope"></span> Съобщения</a></li>
+      <li>
+        <span class="fa fa-envelope"></span>
+        <a href="./messages.php">Съобщения</a></li>
       <li id="username">
         <span class="fa fa-user"></span>
         <a>62547</a>
@@ -31,14 +37,17 @@
             </div>  
           </div>
           <hr/>
-          <li><span class="fa fa-gear"></span>
-            <a href="#">Настройки</a>
+          <li>
+            <span class="fa fa-gear"></span>
+            <a href="./settings.php">Настройки</a>
           </li>
-          <li><span class="fa fa-database"></span>
-            <a href="#">Моите данни</a>
+          <li>
+            <span class="fa fa-database"></span>
+            <a href="./setting.php">Моите данни</a>
           </li>
-          <li><span class="fa fa-power-off"></span>
-            <a href="#">Изход</a>
+          <li>
+            <span class="fa fa-power-off"></span>
+            <a href="./../login/login.php">Изход</a>
           </li>
         </ul>
       </li>
