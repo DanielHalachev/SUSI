@@ -9,8 +9,8 @@
         <a href="./timetable.php">График</a>
       </li>
       <li>
-        <span class="fa fa-money-bill-1-wave"></span>
-        <a>Такси</a>
+        <span class="fa fa-file-pen"></span>
+        <a href="./grades.php">Оценки</a>
       </li>
       <li>
         <span class="fa fa-graduation-cap"></span>
