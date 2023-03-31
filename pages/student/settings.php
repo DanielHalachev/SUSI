@@ -50,15 +50,15 @@ include "./../../includes/header.php"
         </tr>
         <tr>
           <td>Имейл</td>
-          <td>somerandomemail@fmi.uni-sofia.bg</td>
+          <td>somerandomemail@fmi.uni-sofia.bg <span class="fa fa-pen-to-square"></span></td>
         </tr>
         <tr>
           <td>Телефон</td>
-          <td>0888888888</td>
+          <td>0888888888 <span class="fa fa-pen-to-square"></td>
         </tr>
         <tr>
           <td>Адрес</td>
-          <td>гр. Плевен, ул. "Гренадерска" 21</td>
+          <td>гр. Плевен, ул. "Гренадерска" 21 <span class="fa fa-pen-to-square"></td>
         </tr>
       </tbody>
     </table>
