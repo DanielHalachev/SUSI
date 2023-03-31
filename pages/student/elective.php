@@ -31,14 +31,14 @@
         <table>
         <thead>
         <tr>
-          <th>Име</th>
-          <th>Преподавател</th>
-          <th>Кредити</th>
-          <th>Оценка</th>
-          <th>Препоръчителен семестър</th>
-          <th>Рейтинг</th>
-          <th>Маркиране</th>
-          <th>Записване</th>
+          <th>Име <span class="fa fa-filter"></span></th>
+          <th>Преподавател <span class="fa fa-filter"></span></th>
+          <th>Кредити <span class="fa fa-filter"></span></th>
+          <th>Оценка <span class="fa fa-filter"></span></th>
+          <th>Препоръчителен семестър <span class="fa fa-filter"></span></th>
+          <th>Рейтинг <span class="fa fa-filter"></span></th>
+          <th>Маркиране <span class="fa fa-filter"></span></th>
+          <th>Записване <span class="fa fa-filter"></span></th>
         </tr>
         </thead>
         <tbody>
