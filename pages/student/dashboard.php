@@ -104,12 +104,12 @@ include "./../../includes/header.php"
           <tr>
             <td>Семестриална такса</td>
             <td>450лв.</td>
-            <td class="payment-status"><a class="positive">Платена</a></td>
+            <td class="no-padding"><a class="positive">Платена</a></td>
           </tr>
           <tr>
             <td>Exam retake tax</td>
             <td>50.00</td>
-            <td class="payment-status"><a href="#" class="negative">Плати</a></td>
+            <td class="no-padding"><a href="#" class="negative">Плати</a></td>
           </tr>
         </tbody>
       </table>
@@ -128,21 +128,20 @@ include "./../../includes/header.php"
         <tbody>
           <tr>
             <td>Introduction to Programming</td>
-            <td><input type="checkbox" name="mark" value="EL01"></td>
+            <td class="no-padding"><input type="checkbox" name="mark" value="EL01"></td>
           </tr>
           <tr>
             <td>Database Management Systems</td>
-            <td><input type="checkbox" name="mark" value="EL02" checked></td>
+            <td class="no-padding"><input type="checkbox" name="mark" value="EL02" checked></td>
           </tr>
           <tr>
             <td>Web Development</td>
-            <td><input type="checkbox" name="mark" value="EL03"></td>
+            <td class="no-padding"><input type="checkbox" name="mark" value="EL03"></td>
           </tr>
           <tr>
             <td>Artificial Intelligence</td>
-            <td><input type="checkbox" name="mark" value="EL04"></td>
+            <td class="no-padding"><input type="checkbox" name="mark" value="EL04"></td>
           </tr>
-          <!-- add more rows as needed -->
         </tbody>
       </table>
     </div>
