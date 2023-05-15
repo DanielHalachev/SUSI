@@ -5,6 +5,8 @@ main {
   gap: 20px;
   padding: 20px;
   background-color: #ccc;
+  background-color: #f8fae6;
+  background-color: var(--strong-back-color);
   flex-grow: 1;
   min-height: calc(100vh - 108px);
 }
@@ -23,6 +25,10 @@ main {
 }
 
 .cluster-content {
+  overflow: auto;
+}
+
+.cluster-content:hover {
   overflow: auto;
 }
 
@@ -72,7 +78,7 @@ main {
 /*   font-weight: 700; */
 /* } */
 
-.cluster .payment-status {
+.cluster .no-padding {
   padding: 0px;
 }
 .positive {

@@ -1,106 +1,47 @@
-.filter-container {
-  display: flex;
+body{
+  min-height: 100vh;
+}
+main {
   flex-direction: column;
   flex-wrap: wrap;
-  gap: 20px;
-  max-width: 300px;
+  justify-content: flex-start;
+  flex: 1;
 }
 
-.optional-headers label {
-  margin: auto 0px;
+header, footer {
+  flex: 0;
+}
+
+.filters {
   display: flex;
+  flex-direction: row;
   flex-wrap: wrap;
-}
-
-.optional-headers .select-btn {
-  width: auto;
-}
-
-.optional-headers {
+  align-items: center;
+  align-content: center;
   gap: 20px;
+  
 }
 
-.select-btn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    border: 1px solid #bbb;
+.filters * {
+  margin: auto 0px;
 }
-.select-btn .btn-text{
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
+
+.export {
+  font-size: x-large;
+  cursor: pointer;
 }
-.select-btn .arrow-dwn{
-    display: flex;
-    height: 21px;
-    width: 21px;
-    border-radius: 50%;
-    /* background: #6e93f7; */
-    background: #dda;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
+
+th:hover {
+  text-decoration: underline;
 }
-.select-btn.open .arrow-dwn{
-    transform: rotate(-180deg);
+
+tr {
+  transition: .6s ease opacity,.5s ease transform;
 }
-.list-items{
-    /* position: relative; */
-    margin-top: 15px;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-.select-btn.open ~ .list-items{
-    display: block;
-}
-.list-items .item{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 0 15px;
-    border-radius: 8px;
-}
-.list-items .item:hover{
-    background-color: #e7edfe;
-}
-.item .item-text{
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
-}
-.item .checkbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 16px;
-    width: 16px;
-    border-radius: 4px;
-    margin-right: 12px;
-    border: 1.5px solid #c0c0c0;
-    transition: all 0.3s ease-in-out;
-}
-.item.checked .checkbox{
-    background-color: #4070f4;
-    border-color: #4070f4;
-}
-.checkbox .check-icon{
-    color: #fff;
-    font-size: 11px;
-    transform: scale(0);
-    transition: all 0.2s ease-in-out;
-}
-.item.checked .check-icon{
-    transform: scale(1);
+
+
+main input[type="search"],
+main div{
+  width:100%;
+  overflow: auto;
 }

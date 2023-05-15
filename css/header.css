@@ -187,12 +187,14 @@ nav ul.show {
 }
 
 .profile-pic {
-  width: 75px;
-  height: 100px;
+  width: 74px;
+  height: 74px;
   margin: 10px;
   border: 1px solid #bbb;
   float: left;
   object-fit: cover;
+  border-radius: 34px;
+  border: 1px solid #333;
 }
 
 .user-info {
@@ -208,3 +210,4 @@ nav ul.show {
   flex-wrap: wrap;
   justify-content: center;
 }
+
