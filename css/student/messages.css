@@ -85,3 +85,48 @@ main h1 {
   font-size: 16px;
   padding: 10px;
 }
+
+
+.tabs {
+  display: flex;
+  flex-flow: column;
+  flex: 4;
+  overflow: scroll;
+  min-width: 400px;
+}
+
+.tabline {
+  overflow: hidden;
+  border: 1px solid #bbb;
+  background-color: #fff;
+  max-width: 100%;
+}
+
+.tabline button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #333;
+  border-radius: 0px;
+}
+
+.tabline button:hover {
+  background-color: #ddd;
+}
+
+.tabline button.active {
+  background-color: #bbb;
+}
+
+.tabcontent {
+  display: none;
+  /* padding: 6px 12px; */
+  border: 1px solid #bbb;
+  border-top: none;
+  overflow: scroll;
+}

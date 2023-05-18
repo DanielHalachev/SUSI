@@ -1,6 +1,7 @@
 <!DOCTYPE html>
   <html>
   <head>
+    <script src="./../../js/tabs.js"></script>
     <script>
 function displayPreview(id) {
   const message = document.querySelector(`.message:nth-child(${id})`);
@@ -27,7 +28,13 @@ function displayPreview(id) {
     ?>
     <main>
       <h1>Съобщения</h1>
-      <div class="messages-container">
+  <div class="tabs">
+    <div class="tabline">
+      <button class="tablinks" onclick="openTab(event, 'messages-container')">Входяща поща</button>
+      <button class="tablinks" onclick="openTab(event, 'message-form-container')">Ново съобщение</button>
+    </div> 
+        <div>
+      <div id="messages-container" class="tabcontent messages-container">
         <h2>Входяща поща</h2>
         <div class="message-list">
           <div class="message" onclick="displayPreview(1)">
@@ -70,9 +77,9 @@ function displayPreview(id) {
             <p>This is the preview for message 5.</p>
           </div>
         </div>
-      </div>
-        </div>
-      <div class="message-form-container">
+          </div>
+                </div>
+      <div id="message-form-container" class="tabconent message-form-container">
         <h2>Ново съобщение</h2>
         <form class="message-form">
           <input type="text" id="recipient-input" name="recipient" required placeholder="Въведете получател">
@@ -84,6 +91,8 @@ function displayPreview(id) {
           <button type="submit">Изпрати</button>
         </form>
       </div>
+          </div>
+        </div>
     </main>
     <?php
       include "./../../includes/footer.php";
