@@ -75,12 +75,12 @@ select {
   border: 1px solid #ccc;
   border-radius: 5px;
   font-size: 16px;
-  appearance: none;
-  -webkit-appearance: none;
+  /* appearance: none; */
+  /* -webkit-appearance: none; */
 }
 
 select:hover {
-  border: 1px solid var(--primary-color);
+  border: 1px solid var(--secondary-color);
 }
 
 select:focus {
