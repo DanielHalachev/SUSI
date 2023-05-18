@@ -25,6 +25,17 @@ header, footer {
   margin: auto 0px;
 }
 
+/* Label */
+.filters label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+
+
 .export {
   font-size: x-large;
   cursor: pointer;
@@ -43,4 +54,28 @@ main input[type="search"],
 main div{
   width:100%;
   overflow: auto;
+}
+
+@media (max-width: 767px) {
+  table th:nth-child(2),
+  table td:nth-child(2),
+  table th:nth-child(3),
+  table td:nth-child(3) {
+    display: none;
+  }
+  .filters {
+    display: none;
+  }
+  input[type="search"] {
+    margin-bottom: 10px;
+    position: sticky;
+    top: 55px;
+  }
+}
+
+@media (max-width: 991px) {
+  table th:nth-child(2),
+  table td:nth-child(2) {
+    display: none;
+  }
 }

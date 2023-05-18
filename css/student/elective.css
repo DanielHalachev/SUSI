@@ -5,6 +5,32 @@ main {
   /* min-height: calc(100vh - 108px); */
 }
 
+.filters {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--on-primary); 
+  padding-bottom: 10px;
+}
+
+.filters * {
+  margin: auto 0px;
+}
+
+/* Label */
+.filters label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+
 main input[type="search"],
 main div{
   width:100%;
@@ -19,3 +45,6 @@ main div{
 .optional-headers input[type="checkbox"] {
   margin: 5px 10px 5px 20px;
 }
+
+
+
