@@ -41,6 +41,10 @@ header, footer {
   cursor: pointer;
 }
 
+th {
+  cursor: pointer;
+}
+
 th:hover {
   text-decoration: underline;
 }
