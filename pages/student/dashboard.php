@@ -6,7 +6,7 @@
 include "./../../includes/styles.php";
 include "./../../includes/javascript.php"
 ?>
-<link rel="stylesheet" type="text/css" href="./../../css/dashboard.css"/>
+<link rel="stylesheet" type="text/css" href="./../../css/student/dashboard.css"/>
 </head>
 <body>
 <?php
@@ -26,34 +26,14 @@ include "./../../includes/header.php"
         </thead>
         <tbody>
           <tr>
-            <td>Увод в програмирането</td>
-            <td>ФМИ, 200</td>
-            <td>13:00</td>
-          </tr>
-          <tr>
             <td>Английски език</td>
             <td>ФМИ, 313</td>
-            <td>15:15</td>
+            <td>09:00</td>
           </tr>
           <tr>
             <td>Бази данни</td>
             <td>ФМИ, 325</td>
-            <td>16:00</td>
-          </tr>
-          <tr>
-            <td>Увод в програмирането</td>
-            <td>ФМИ, 200</td>
-            <td>13:00</td>
-          </tr>
-          <tr>
-            <td>Английски език</td>
-            <td>ФМИ, 313</td>
-            <td>15:15</td>
-          </tr>
-          <tr>
-            <td>Бази данни</td>
-            <td>ФМИ, 325</td>
-            <td>16:00</td>
+            <td>11:00</td>
           </tr>
           <tr>
             <td>Увод в програмирането</td>
@@ -61,29 +41,19 @@ include "./../../includes/header.php"
             <td>13:00</td>
           </tr>
           <tr>
-            <td>Английски език</td>
+            <td>ОO програмиране</td>
             <td>ФМИ, 313</td>
-            <td>15:15</td>
+            <td>15:00</td>
           </tr>
           <tr>
-            <td>Бази данни</td>
+            <td>Операционни системи</td>
             <td>ФМИ, 325</td>
-            <td>16:00</td>
+            <td>17:00</td>
           </tr>
           <tr>
             <td>Увод в програмирането</td>
             <td>ФМИ, 200</td>
-            <td>13:00</td>
-          </tr>
-          <tr>
-            <td>Английски език</td>
-            <td>ФМИ, 313</td>
-            <td>15:15</td>
-          </tr>
-          <tr>
-            <td>Бази данни</td>
-            <td>ФМИ, 325</td>
-            <td>16:00</td>
+            <td>19:00</td>
           </tr>
         </tbody>
       </table>
@@ -104,12 +74,12 @@ include "./../../includes/header.php"
           <tr>
             <td>Семестриална такса</td>
             <td>450лв.</td>
-            <td class="no-padding"><a class="positive">Платена</a></td>
+            <td class="no-padding"><a class="neutral">Платена</a></td>
           </tr>
           <tr>
             <td>Exam retake tax</td>
             <td>50.00</td>
-            <td class="no-padding"><a href="#" class="negative">Плати</a></td>
+            <td class="no-padding"><a href="#" class="positive">Плати</a></td>
           </tr>
         </tbody>
       </table>
@@ -127,20 +97,20 @@ include "./../../includes/header.php"
         </thead>
         <tbody>
           <tr>
-            <td>Introduction to Programming</td>
-            <td class="no-padding"><input type="checkbox" name="mark" value="EL01"></td>
+            <td>Програмиране с Java</td>
+            <td class="no-padding"><input type="checkbox"></td>
           </tr>
           <tr>
-            <td>Database Management Systems</td>
-            <td class="no-padding"><input type="checkbox" name="mark" value="EL02" checked></td>
+            <td>Фрактали</td>
+            <td class="no-padding"><input type="checkbox" checked></td>
           </tr>
           <tr>
-            <td>Web Development</td>
-            <td class="no-padding"><input type="checkbox" name="mark" value="EL03"></td>
+            <td>Увод в статистиката</td>
+            <td class="no-padding"><input type="checkbox" checked></td>
           </tr>
           <tr>
-            <td>Artificial Intelligence</td>
-            <td class="no-padding"><input type="checkbox" name="mark" value="EL04"></td>
+            <td>Функционално програмиране</td>
+            <td class="no-padding"><input type="checkbox"></td>
           </tr>
         </tbody>
       </table>
@@ -207,24 +177,24 @@ include "./../../includes/header.php"
           </thead>
           <tbody>
             <tr>
-              <td>Math</td>
-              <td>John Smith</td>
-              <td>4.5</td>
+              <td>Дискретни структури</td>
+              <td>Андрей Сариев</td>
+              <td>4.50</td>
             </tr>
             <tr>
-              <td>History</td>
-              <td>Jane Doe</td>
-              <td>5.0</td>
+              <td>Алгебра</td>
+              <td>Боряна Ангелова</td>
+              <td>5.00</td>
             </tr>
             <tr>
-              <td>Science</td>
-              <td>David Johnson</td>
-              <td>4.0</td>
+              <td>Комуникативни умения</td>
+              <td>Симеон Петров</td>
+              <td>4.00</td>
             </tr>
             <tr>
-              <td>English</td>
-              <td>Mary Williams</td>
-              <td>5.5</td>
+              <td>Структури от данни</td>
+              <td>Боян Димитров</td>
+              <td>5.50</td>
             </tr>
           </tbody>
         </table>

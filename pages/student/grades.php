@@ -36,9 +36,6 @@
     <span class="export fa fa-file-csv"></span>
     <span class="export fa fa-file-pdf"></span>
   </div>
-  <br/>
-  <hr/>
-  <br/>
   <div>
     <table>
       <thead>
