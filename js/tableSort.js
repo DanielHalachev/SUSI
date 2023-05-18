@@ -1,33 +1,50 @@
-window.addEventListener('load', function() {
-  const headers = document.querySelectorAll('th');
-  const rows = document.querySelectorAll('tr');
+function sortTable(columnHeader) {
+  const column = columnHeader.getAttribute('data-column');
+  const table = document.querySelector('table');
+  const tbody = table.querySelector('tbody');
+  const rows = Array.from(tbody.querySelectorAll('tr'));
 
-  headers.forEach((header) => {
-    header.addEventListener('click', () => {
-      const columnIndex = Array.from(headers).indexOf(header);
-      const isAscending = header.classList.toggle('ascending');
-      const comparator = getComparator(columnIndex, isAscending);
+  // Get the current sorting order and toggle it
+  const currentOrder = columnHeader.classList.contains('ascending') ? 'ascending' : 'descending';
 
-      const sortedRows = Array.from(rows).sort(comparator);
-      const parentAccordion = header.closest('.accordion');
-      const tbody = parentAccordion.querySelector('tbody');
+  // Reset the sort icons
+  const sortIcons = table.querySelectorAll('thead th .fa');
+  sortIcons.forEach(function(icon) {
+    icon.className = 'fa fa-sort';
+  });
 
-      sortedRows.forEach((row) => {
-        tbody.appendChild(row);
-      });
-    });
-    });
+  if (currentOrder === 'ascending') {
+    columnHeader.classList.remove('ascending');
+    columnHeader.classList.add('descending');
+    columnHeader.querySelector('.fa').classList.remove('fa-sort');
+    columnHeader.querySelector('.fa').classList.add('fa-sort-down');
+    rows.sort(compareValues(column, 'desc'));
+  } else {
+    columnHeader.classList.remove('descending');
+    columnHeader.classList.add('ascending');
+    columnHeader.querySelector('.fa').classList.remove('fa-sort');
+    columnHeader.querySelector('.fa').classList.add('fa-sort-up');
+    rows.sort(compareValues(column, 'asc'));
+  }
 
-});
-function getComparator(columnIndex, isAscending) {
-  return (rowA, rowB) => {
-    const valueA = rowA.querySelector(`td:nth-child(${columnIndex})`).textContent;
-    const valueB = rowB.querySelector(`td:nth-child(${columnIndex})`).textContent;
+  // Reorder the table rows
+  rows.forEach(function(row) {
+    tbody.appendChild(row);
+  });
+}
 
-    if (isAscending) {
-      return valueA.localeCompare(valueB);
-    } else {
-      return valueB.localeCompare(valueA);
+function compareValues(column, order) {
+  return function(row1, row2) {
+    const value1 = row1.querySelector(`td:nth-child(${column})`).innerText.trim();
+    const value2 = row2.querySelector(`td:nth-child(${column})`).innerText.trim();
+
+    let comparison = 0;
+    if (value1 > value2) {
+      comparison = 1;
+    } else if (value1 < value2) {
+      comparison = -1;
     }
+
+    return order === 'asc' ? comparison : -comparison;
   };
 }

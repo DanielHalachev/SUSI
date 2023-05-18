@@ -9,6 +9,7 @@
 <script src="./../../js/popup.js"></script> 
 <script src="./../../js/columns.js"></script> 
 <script src="./../../js/accordionTable.js"></script> 
+<script src="./../../js/tableFilter.js"></script> 
 <script src="./../../js/tableSort.js"></script> 
 </head>
 <body>
@@ -24,14 +25,10 @@
     <label><input type="checkbox" checked data-column="3"/>Тип</label>
     <label><input type="checkbox" checked data-column="4"/>Кредити</label>
     <label><input type="checkbox" checked data-column="5"/>Оценка</label>
-    <select data-placeholder="Begin typing" class="chosen-select">
-      <option>Изберете семестър</option>
-      <option>Зимен 2020-2021</option> 
-      <option>Летен 2020-2021</option> 
-      <option>Зимен 2021-2022</option> 
-      <option>Летен 2021-2022</option> 
-      <option>Зимен 2022-2023</option> 
-      <option>Летен 2023-2023</option> 
+    <select id="semester-select" class="chosen-select">
+      <option value="all" default>Всички семестри</option>
+      <option value="semester1">Зимен 2020-2021</option> 
+      <option value="semester2">Летен 2020-2021</option> 
     </select>
     <span class="export fa fa-file-csv"></span>
     <span class="export fa fa-file-pdf"></span>
@@ -40,11 +37,11 @@
     <table>
       <thead>
         <tr>
-          <th>Име <span class="fa fa-filter"></span></th>
-          <th>Преподавател <span class="fa fa-filter"></span></th>
-          <th>Тип <span class="fa fa-filter"></span></th>
-          <th>Кредити <span class="fa fa-filter"></span></th>
-          <th>Оценка <span class="fa fa-filter"></span></th>
+          <th data-column="1" onclick="sortTable(this)">Име <span class="fa fa-sort"></span></th>
+          <th data-column="2" onclick="sortTable(this)">Преподавател <span class="fa fa-sort"></span></th>
+          <th data-column="3" onclick="sortTable(this)">Тип <span class="fa fa-sort"></span></th>
+          <th data-column="4" onclick="sortTable(this)">Кредити <span class="fa fa-sort"></span></th>
+          <th data-column="5" onclick="sortTable(this)">Оценка <span class="fa fa-sort"></span></th>
         </tr>
       </thead>
       <tbody>
