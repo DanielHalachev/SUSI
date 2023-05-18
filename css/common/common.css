@@ -47,7 +47,6 @@ body {
 /* Main */
 main {
   display: flex;
-  flex-direction: row;
   flex-wrap: wrap;
   margin: 0px auto;
   width:100%;
