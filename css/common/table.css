@@ -1,0 +1,23 @@
+/* Table */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  overflow: auto;
+}
+
+th,
+td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ccc;
+}
+
+th {
+  background-color: #f2f2f2;
+  font-weight: 700;
+}
+
+td {
+  background-color: var(--surface-color);
+}
+

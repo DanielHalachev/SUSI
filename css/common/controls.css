@@ -1,0 +1,136 @@
+/* Label */
+label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+
+/* Text fields */
+input[type="text"],
+input[type="password"],
+input[type="search"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+input[type="text"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus {
+  border: 1px solid var(--secondary-color);
+  outline: 1px solid var(--secondary-color);
+}
+
+input[type="text"]:hover,
+input[type="password"]:hover,
+input[type="search"]:hover {
+  border: 1px solid var(--secondary-color);
+}
+
+input[type="search"]{
+  height: 40px;
+}
+
+/* Checkbox */
+input[type="checkbox"]{
+  appearance: none;
+  -webkit-appearance: none;
+  margin: 0px auto;
+  width: 1.5em;
+  height: 1.5em;
+  background: transparent;
+  border: 2px solid var(--secondary-color);
+  border-radius: 5px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+input[type="checkbox"]:checked{
+  color: var(--secondary-color);
+  font-weight: bold;
+}
+
+input[type="checkbox"]:checked:after{
+  content: "\2713";
+  font-size: 1.5em;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+input[type="checkbox"]:checked:after::content {
+  transform: translateY(-1em);
+}
+
+/* Select */
+select {
+  background: var(--surface-color);
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  appearance: none;
+  -webkit-appearance: none;
+}
+
+select:hover {
+  border: 1px solid var(--primary-color);
+}
+
+select:focus {
+  border: 1px solid var(--secondary-color);
+  outline: 1px solid var(--secondary-color);
+}
+
+select option {
+  appearance: none;
+  -webkit-appearance: searchfield;
+  color: #333;
+}
+
+select option:hover {
+  background-color: #333;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+body::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--secondary-color);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+/* Button */
+button {
+  background-color: #3d3d3d;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+
+button:hover {
+  opacity: 0.9;
+}

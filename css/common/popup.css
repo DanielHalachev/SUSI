@@ -1,0 +1,15 @@
+/* Popups appearing on mouse hover */
+.popup {
+  position: absolute;
+  background-color: var(--surface-color);
+  border: 1px solid #ccc;
+  padding: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+  max-width: 200px;
+  display: none;
+}
+
+.popup.visible {
+  display: block;
+}

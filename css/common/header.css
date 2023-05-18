@@ -1,0 +1,236 @@
+/* Header */
+header {
+  background-color: var(--surface-color);
+  display: flex;
+  flex-direction: row;
+  position: sticky;
+  top: 0;
+  padding: 0px 5px 0px 15px;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ccc;
+  margin-bottom: auto;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+header h1 {
+  font-size: 36px;
+  margin: 15px;
+}
+
+header .logo {
+  height: 50px;
+}
+
+/* Nav */
+nav {
+  display: flex;
+  flex-flow: row;
+  flex-wrap: wrap;
+}
+
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-flow: row;
+  flex-flow: wrap;
+}
+
+nav li {
+  display: inline-block;
+  transition-duration: 0.5s;
+  padding: 20px 10px;
+  text-decoration: none;
+  position: relative;
+}
+
+nav li:hover {
+  cursor: pointer;
+  background: #dda;
+}
+
+nav li a:hover {
+  text-decoration: none;
+}
+
+nav ul li ul {
+  background: #fff;
+  /* border: 1px solid #bbb; */
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  visibility: hidden;
+  opacity: 0;
+  /* min-width: 300px; */
+  position: absolute;
+  transition: all 0.5s ease;
+  margin-top: 20px;
+  left: 0;
+  display: none;
+}
+
+nav ul li .user-dropdown {
+  right: 0;
+  left:auto;
+  min-width: 300px;
+}
+
+nav ul li .user-dropdown p {
+  color: #333;
+  cursor: auto;
+  padding: 0px 10px;
+}
+
+nav ul li:hover > ul,
+/* applies style to parent even when children are in focus */
+nav ul li:focus-within > ul,
+nav ul li ul:hover {
+  visibility: visible;
+  opacity: 1;
+  display: block;
+}
+
+nav ul li ul li {
+  clear: both;
+  width: 100%;
+  padding: 15px;
+}
+
+/* do not apply outline on <a> when focusing via the link */
+nav li:focus-within a {
+  outline: none;
+}
+
+#menu-button {
+  justify-content: center;
+  align-items: center;
+  color: #333;
+  font-size: 30px;
+}
+
+@media only screen and (min-width: 768px) {
+  #menu-button {
+    display: none;
+  }
+}
+
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    background-color: #fff;
+  }
+
+  nav li {
+    display: block;
+    margin: 0;
+    border-bottom: 1px solid #bbb;
+  }
+
+  nav li:last-child {
+    border-bottom: none;
+  }
+
+  #menu-button {
+    display: block;
+    cursor: pointer;
+  }
+
+  .logo,
+  nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+  }
+
+  .logo {
+    font-size: 1.5rem;
+  }
+
+  nav #menu-button {
+    order: 1;
+  }
+
+  nav ul {
+    order: 2;
+  }
+
+  nav ul li {
+    display: block;
+    margin: 0;
+  }
+
+  nav ul li ul {
+    position: static;
+    display: none;
+    visibility: hidden;
+    opacity: 0;
+    background: none;
+    margin-top: 10;
+    box-shadow: none;
+  }
+
+  nav ul li:hover ul li:last-child {
+    padding-bottom: 0px;
+  }
+
+  nav ul li:hover ul,
+  nav ul li:focus-within ul,
+  nav ul li ul:hover {
+    display: block;
+    visibility: visible;
+    opacity: 1;
+  }
+
+  .user-info, .user-info div, .user-info div p, .user-info img {
+    display: none;
+  }
+
+  #username {
+    background-color: #fff;
+    border-bottom: 5px solid #bbb;
+  }
+}
+
+nav ul.show {
+  display:block;
+}
+
+@media (min-width:768px) { 
+  #username {
+    background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+  }
+}
+
+#username:hover {
+  background: #dda;
+}
+
+.profile-pic {
+  width: 74px;
+  height: 74px;
+  margin: 10px;
+  border: 1px solid #bbb;
+  float: left;
+  object-fit: cover;
+  border-radius: 34px;
+  border: 1px solid #333;
+}
+
+.user-info {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  cursor: auto;
+}
+
+.user-info div {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
