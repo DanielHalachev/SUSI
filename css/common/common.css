@@ -25,6 +25,10 @@
   --negative-hover: #d9231a;
   --neutral: #dedede;
   --neutral-hover: #f0f0f0;
+
+  --on-positve: #ffffff;
+  --on-negative: #ffffff;
+  --on-neutral: #000000;
 }
 
 * {
