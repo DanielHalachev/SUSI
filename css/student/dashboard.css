@@ -16,6 +16,7 @@ main {
   max-width: 450px;
   max-height: 300px;
   background-color: var(--surface-color);
+  color: var(--on-surface);
   border-radius: 10px;
   padding: 10px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -33,19 +34,16 @@ main {
 .cluster h2 {
   font-size: 24px;
   font-weight: 700;
-  color: #333;
   margin: 0;
   padding: 15px 0px;
 }
 
 .cluster h3 {
-  color: #333;
   padding: 10px 0px;
 }
 
 .cluster h2 a {
   text-decoration: none;
-  color: #333;
 }
 
 .cluster h2 a:hover {
@@ -77,10 +75,11 @@ main {
 
 .message {
   display: block;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   margin: 5px;
   padding: 5px;
-  background-color: #f2f2f2;
+  background-color: var(--th-color);
+  color: var(--on-th);
   text-align: left;
 }
 

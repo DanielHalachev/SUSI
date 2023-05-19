@@ -1,12 +1,20 @@
 main {
-  flex-flow: row;
+  flex-direction: column;
   flex-wrap: wrap;
-  justify-content: center;
-  /* min-height: calc(100vh - 108px); */
+  justify-content: flex-start;
+  flex: 1;
+}
+
+header, footer {
+  flex: 0;
 }
 
 main table {
   table-layout:fixed;
+}
+
+main table td {
+  color: #000;
 }
 
 main table th {
@@ -21,106 +29,33 @@ main table thead tr:first-of-type th {
   padding-left: 0px;
 }
 
-.filters{
-    /* position: relative; */
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    min-width: 350px;
-    /* width: 100%; */
-    margin: 10px auto;
-}
-.select-btn{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-}
-.select-btn .btn-text{
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
-}
-.select-btn .arrow-dwn{
-    display: flex;
-    height: 21px;
-    width: 21px;
-    color: #fff;
-    /* font-size: 14px; */
-    border-radius: 50%;
-    /* background: #6e93f7; */
-    background: #dda;
-    align-items: center;
-    justify-content: center;
-    transition: 0.3s;
-}
-.select-btn.open .arrow-dwn{
-    transform: rotate(-180deg);
-}
-.list-items{
-    /* position: relative; */
-    margin-top: 15px;
-    border-radius: 8px;
-    padding: 10px;
-    background-color: #fff;
-    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
-    display: none;
-}
-.select-btn.open ~ .list-items{
-    display: block;
-}
-.list-items .item{
-    display: flex;
-    align-items: center;
-    list-style: none;
-    height: 50px;
-    cursor: pointer;
-    transition: 0.3s;
-    padding: 0 15px;
-    border-radius: 8px;
-}
-.list-items .item:hover{
-    background-color: #e7edfe;
-}
-.item .item-text{
-    font-size: 16px;
-    font-weight: 400;
-    color: #333;
-}
-.item .checkbox{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 16px;
-    width: 16px;
-    border-radius: 4px;
-    margin-right: 12px;
-    border: 1.5px solid #c0c0c0;
-    transition: all 0.3s ease-in-out;
-}
-.item.checked .checkbox{
-    background-color: #4070f4;
-    border-color: #4070f4;
-}
-.checkbox .check-icon{
-    color: #fff;
-    font-size: 11px;
-    transform: scale(0);
-    transition: all 0.2s ease-in-out;
-}
-.item.checked .check-icon{
-    transform: scale(1);
-}
-
-.filter-container {
-  display:flex;
+.filters {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--on-primary); 
+  padding-bottom: 10px;
+  width:100%;
   justify-content: flex-start;
 }
 
+.filters * {
+  margin: auto 0px;
+}
 
+/* Label */
+.filters label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
 .lecture {
   background-color: #ffcccc;
 }
