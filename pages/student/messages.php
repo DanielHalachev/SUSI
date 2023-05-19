@@ -1,7 +1,18 @@
 <!DOCTYPE html>
   <html>
   <head>
-    <script src="./../../js/tabs.js"></script>
+<script>
+window.addEventListener('load', function() {
+  const checkboxes = document.querySelectorAll('input[type="checkbox"]');
+  const divs = document.querySelectorAll('.tabcontent > div');
+
+  for (let i = 0; i < checkboxes.length; i++){
+    checkboxes[i].addEventListener('change', (event) => {
+      divs[i].classList.toggle('active');
+    });
+  }
+});
+</script>
     <script>
 function displayPreview(id) {
   const message = document.querySelector(`.message:nth-child(${id})`);
@@ -28,16 +39,17 @@ function displayPreview(id) {
     ?>
     <main>
       <h1>Съобщения</h1>
+
+  <div class="filters">
+    <label><input type="checkbox" checked data-column="1"/>Входяща поща</label>
+    <label><input type="checkbox" data-column="2"/>Ново съобщение</label>
+  </div>
   <div class="tabs">
-    <div class="tabline">
-      <button class="tablinks" onclick="openTab(event, 'messages-container')">Входяща поща</button>
-      <button class="tablinks" onclick="openTab(event, 'message-form-container')">Ново съобщение</button>
-    </div> 
-        <div>
-      <div id="messages-container" class="tabcontent messages-container">
+    <div class="tabcontent">
+      <div id="messages-container" class="messages-container active">
         <h2>Входяща поща</h2>
         <div class="message-list">
-          <div class="message" onclick="displayPreview(1)">
+          <div class="neutral message" onclick="displayPreview(1)">
             <h4>Добре дошли в курса по Джава</h4>
             <p>Евгений Кръстев</p>
             <p>Преди 2 часа</p>
@@ -45,7 +57,7 @@ function displayPreview(id) {
               <p>This is the preview for message 1.</p>
             </div>
           </div>
-          <div class="message" onclick="displayPreview(2)">
+          <div class="neutral message" onclick="displayPreview(2)">
             <h4>Провеждане на курса по Увод в програмирането</h4>
             <p>Александър Димов</p>
             <p>Вчера</p>
@@ -53,7 +65,7 @@ function displayPreview(id) {
               <p>This is the preview for message 2.</p>
             </div>
           </div>
-          <div class="message" onclick="displayPreview(3)">
+          <div class="neutral message" onclick="displayPreview(3)">
           <h4>Гост-лектор</h4>
           <p>Боян Бончев</p>
           <p>19.03 9:00</p>
@@ -61,7 +73,7 @@ function displayPreview(id) {
             <p>This is the preview for message 3.</p>
           </div>
         </div>
-        <div class="message" onclick="displayPreview(4)">
+        <div class="neutral message" onclick="displayPreview(4)">
           <h4>Съобщение 4</h4>
             <p>Евгений Кръстев</p>
             <p>Преди 2 часа</p>
@@ -69,7 +81,7 @@ function displayPreview(id) {
             <p>This is the preview for message 4.</p>
           </div>
         </div>
-        <div class="message" onclick="displayPreview(5)">
+        <div class="neutral message" onclick="displayPreview(5)">
           <h4>Съобщение 5</h4>
             <p>Евгений Кръстев</p>
             <p>Преди 2 часа</p>
@@ -79,7 +91,7 @@ function displayPreview(id) {
         </div>
           </div>
                 </div>
-      <div id="message-form-container" class="tabconent message-form-container">
+      <div id="message-form-container" class="message-form-container">
         <h2>Ново съобщение</h2>
         <form class="message-form">
           <input type="text" id="recipient-input" name="recipient" required placeholder="Въведете получател">
