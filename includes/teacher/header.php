@@ -40,7 +40,7 @@
                     <div class="user-info">
                         <img class="profile-pic" src="./../../images/profile-pic-teacher.jpg"/>
                         <div>
-                            <p><small>Иван Петров Иванов</small></p>
+                            <p><small>Иван Христов Георгиев</small></p>
                             <p><small>кат. "Вероятности и статистика"</small></p>
                         </div>
                     </div>
