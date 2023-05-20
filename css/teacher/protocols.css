@@ -128,6 +128,7 @@
 
 .two-grade, .three-grade, .five-grade, .four-grade, .six-grade, .field-grade {
     margin-left: 9px;
+    margin-bottom: 16px;
 }
 
 #protocols-main {
