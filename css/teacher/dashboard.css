@@ -1,0 +1,37 @@
+#daily-timetable {
+    max-width: 990px;
+    max-height: 330px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+#messages {
+    max-height: 330px;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#elective-courses {
+    max-width: 990px;
+    max-height: 290px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#courses {
+    max-height: 290px;
+    max-width: 500px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#hello {
+    background-color: #D8C285;
+}
+
+.cluster {
+    margin-top: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+
+}
