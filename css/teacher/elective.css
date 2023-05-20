@@ -1,0 +1,90 @@
+.selectors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.selectors select {
+    height: 38px;
+    width: 540px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+#search-button {
+  /*  width: 32.9%;*/
+    height: 38px;
+    font-size: 20px;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+#course-details {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+#course-characteristics {
+    display: grid;
+    grid-gap: 10px;
+}
+
+#elective-main {
+    background-color: #D8C285;
+}
+
+#elective-course-table {
+    background-color: #fff;
+    margin-bottom: 24px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#elective-course-table thead tr {
+    height: 70px;
+    font-size: 19px;
+    background-color: #f3f3f3;
+}
+
+#elective-course-table tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#elective-course-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ccc;
+}
+
+#elective-course-table td {
+    height: 60px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px;
+}
+
+.cancel-button {
+    background-color: #be0000;
+    font-size: 15px;
+}
+
+.cancel-button:hover {
+    background-color: #d9231a;
+}
+
+.cancelled-button {
+    background-color: #dedede;
+    color: #000;
+    font-size: 15px;
+}
+
+.cancelled-button:hover {
+    cursor: default;
+}
+
