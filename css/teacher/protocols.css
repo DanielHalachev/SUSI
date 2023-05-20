@@ -1,0 +1,150 @@
+.selectors {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+}
+
+.container {
+    display: grid;
+    grid-gap: 10px;
+}
+
+.selectors select {
+    height: 38px;
+    width: 540px;
+    font-size: 20px;
+    text-align: center;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+#search-button {
+    width: 32.9%;
+    height: 40px;
+    font-size: 20px;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+.two-grade {
+    color: #fff;
+    background-color: #be0000;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+.two-grade:hover {
+    background-color: #d9231a;
+}
+
+.three-grade {
+    color: #fff;
+    background-color: #E99200;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+.three-grade:hover {
+    background-color: #F0A019;
+}
+
+.four-grade {
+    color: #fff;
+    background-color: #F0C619;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+.four-grade:hover {
+    background-color: #FBCC0A;
+}
+
+.five-grade {
+    color: #fff;
+    background-color: #1C85F4;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+.five-grade:hover {
+    background-color: #4294EA;
+}
+
+.six-grade {
+    color: #fff;
+    background-color: #005d2f;
+    padding: 6px;
+    border-radius: 6px;
+    font-size: 22px;
+}
+
+.six-grade:hover {
+    background-color: #007d46;
+}
+
+#protocol-name {
+    margin-top: 18px;
+}
+
+#grades-table {
+    background-color: #fff;
+    margin-bottom: 24px;
+    border-collapse: collapse;
+    font-size: 0.9em;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+#grades-table thead tr {
+    height: 70px;
+    font-size: 19px;
+    background-color: #f3f3f3;
+}
+
+
+#grades-table tbody tr:nth-of-type(even) {
+    background-color: #f3f3f3;
+}
+
+#grades-table tbody tr:last-of-type {
+    border-bottom: 2px solid #ccc;
+}
+
+#grades-table td {
+    height: 30px;
+    font-size: 18px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 1px;
+}
+
+.field-grade {
+    height: 40px;
+    width: 130px;
+    text-align: center;
+    font-size: 29px;
+}
+
+.two-grade, .three-grade, .five-grade, .four-grade, .six-grade, .field-grade {
+    margin-left: 9px;
+    margin-bottom: 16px;
+}
+
+#protocols-main {
+    background-color: #D8C285;
+}
+
+
+#send-button {
+    width: 28.4%;
+    height: 44px;
+    font-size: 20px;
+    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+}
+
+#right-button {
+    text-align: right;
+}
+
+

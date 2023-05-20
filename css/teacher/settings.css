@@ -1,0 +1,129 @@
+main {
+    display: flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    background-color: #D8C285;
+}
+
+.personal-info, .tabs {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.personal-info {
+    display: flex;
+    flex-flow: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    justify-items: center;
+    flex: 1;
+    gap: 0px;
+}
+
+.personal-info img {
+    margin: 20px;
+    border: 1px solid #bbb;
+    object-fit: cover;
+    max-width: 150px;
+}
+
+.personal-info a span {
+    display: block;
+    font-size: 30px;
+}
+
+.personal-info .image-settings {
+    display:flex;
+    flex-flow: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.personal-info .image-settings div {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.tabs {
+    display: flex;
+    flex-flow: column;
+    flex: 4;
+    overflow: scroll;
+    min-width: 400px;
+}
+
+.tabline {
+    overflow: hidden;
+    border: 1px solid #bbb;
+    background-color: #fff;
+    max-width: 100%;
+}
+
+.tabline button {
+    background-color: inherit;
+    float: left;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    padding: 14px 16px;
+    transition: 0.3s;
+    font-size: 17px;
+    color: #333;
+    border-radius: 0px;
+}
+
+.tabline button:hover {
+    background-color: #ddd;
+}
+
+.tabline button.active {
+    background-color: #bbb;
+}
+
+.tabcontent {
+    display: none;
+    /* padding: 6px 12px; */
+    border: 1px solid #bbb;
+    border-top: none;
+    overflow: scroll;
+}
+
+#health-insurance .paid {
+    background-color: green;
+}
+
+#health-insurance .unpaid {
+    background-color: red;
+}
+
+.button {
+    background-color: #3d3d3d;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: #555;
+}
+
+select {
+    margin: 0px 10px 10px 10px;
+}
+select option {
+    background-color: #fff;
+}
+
+#bio-details {
+    margin-top: 30px;
+}
