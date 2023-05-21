@@ -1,4 +1,4 @@
-<header style="background-color: #fff;" >
+<header>
     <a href="./dashboard.php"><img class="logo" src="./../../images/logo.png"/></a>
     <nav role="navigation">
         <!-- <div class="menu-button"><img src="./../../images/menu.png"/></div> -->
