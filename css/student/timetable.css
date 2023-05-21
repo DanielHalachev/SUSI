@@ -5,10 +5,6 @@ main {
   flex: 1;
 }
 
-header, footer {
-  flex: 0;
-}
-
 main table {
   table-layout:fixed;
 }
