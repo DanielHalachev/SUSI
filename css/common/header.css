@@ -71,7 +71,7 @@ nav ul li ul {
 nav ul li .user-dropdown {
   right: 0;
   left:auto;
-  min-width: 300px;
+  min-width: 350px;
 }
 
 nav ul li .user-dropdown p {
