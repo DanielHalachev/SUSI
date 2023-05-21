@@ -6,7 +6,6 @@
     include "./../../includes/styles.php";
     include "./../../includes/javascript.php"
     ?>
-    <link rel="stylesheet" type="text/css" href="./../../css/dashboard.css"/>
     <link rel="stylesheet" type="text/css" href="./../../css/teacher/dashboard.css"/>
 </head>
 <body>
@@ -14,9 +13,9 @@
 include "./../../includes/teacher/header.php"
 ?>
 
-<main id="hello">
+<main>
     <div id="daily-timetable" class="cluster">
-        <h2 class="cluster-title"><a href="#">График за деня</a></h2>
+        <h2 class="cluster-title"><a href="./timetable.php">График за деня</a></h2>
         <div class="cluster-content">
             <table>
                 <thead>
@@ -67,7 +66,7 @@ include "./../../includes/teacher/header.php"
         </div>
     </div>
     <div id="messages" class="cluster">
-        <h2><a href="#">Съобщения</a></h2>
+        <h2><a href="./messages.php">Съобщения</a></h2>
         <div class="cluster-content">
             <ul class="message-list">
                 <li class="message">
@@ -89,7 +88,7 @@ include "./../../includes/teacher/header.php"
         </div>
     </div>
     <div id="elective-courses" class="cluster">
-        <h2><a href="#">Кампания за избираеми дисциплини</a></h2>
+        <h2><a href="./elective.php">Кампания за избираеми дисциплини</a></h2>
         <div class="cluster-content">
             <table>
                 <thead>
@@ -131,16 +130,12 @@ include "./../../includes/teacher/header.php"
                     <td><strong>44</strong></td>
                     <td>50</td>
                 </tr>
-<!--                <tr>-->
-<!--                    <td>Artificial Intelligence</td>-->
-<!--                    <td class="no-padding"><input type="checkbox" name="mark" value="EL04"></td>-->
-<!--                </tr>-->
                 </tbody>
             </table>
         </div>
     </div>
     <div id="courses" class="cluster">
-        <h2><a href="#">Управление на курсове</a></h2>
+        <h2><a href="./courses.php">Управление на курсове</a></h2>
         <div class="cluster-content">
             <table>
                 <thead>

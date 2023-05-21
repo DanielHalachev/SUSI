@@ -1,133 +1,154 @@
-
-body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-}
-
 main {
-    background-color: #D8C285;
-    position: absolute;
-    top: 7.2%;
-    left: 0;
-    right: 0;
-    bottom: 44px;
-}
-
-
-#daily-timetable {
-    max-width: 990px;
-    max-height: 330px;
-    padding-left: 30px;
-    padding-right: 30px;
-}
-
-#messages {
-    max-height: 330px;
-    max-width: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#elective-courses {
-    max-width: 990px;
-    max-height: 290px;
-    padding-left: 40px;
-    padding-right: 40px;
-}
-
-#courses {
-    max-height: 290px;
-    max-width: 500px;
-    padding-left: 20px;
-    padding-right: 20px;
-}
-
-#hello {
-    background-color: #D8C285;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+  min-height: calc(100vh - 120px);
 }
 
 .cluster {
-    margin-top: 20px;
-    margin-left: 53px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-}
-
-
-.cluster {
-    display: flex;
-    flex-flow: column;
-    width: 100%;
-    max-width: 450px;
-    max-height: 300px;
-    background-color: var(--surface-color);
-    color: var(--on-surface);
-    border-radius: 10px;
-    padding: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  background-color: var(--surface-color);
+  color: var(--on-surface);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+  text-align: center;
 }
 
 .cluster-content {
-    overflow: auto;
+  overflow: auto;
 }
 
 .cluster-content:hover {
-    overflow: auto;
+  overflow: auto;
 }
 
 .cluster h2 {
-    font-size: 24px;
-    font-weight: 700;
-    margin: 0;
-    padding: 15px 0px;
+  font-size: 24px;
+  font-weight: 700;
+  margin: 0;
+  padding: 15px 0px;
 }
 
 .cluster h3 {
-    padding: 10px 0px;
+  padding: 10px 0px;
 }
 
 .cluster h2 a {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .cluster h2 a:hover {
-    text-decoration: underline;
+  text-decoration: underline;
 }
 
 .cluster .no-padding {
-    padding: 0px;
+  padding: 0px;
 }
 
 .positive, .negative, .neutral {
-    border: none;
-    padding: 5px;
-    margin: 0px auto;
-    display: block;
-    width: 90%;
-    height: 90%;
+  border: none;
+  padding: 5px;
+  margin: 0px auto;
+  display: block;
+  width: 90%;
+  height: 90%;
 }
 
 .positive:hover, .negative:hover, .neutral:hover {
-    text-decoration: none;
+  text-decoration: none;
 }
 
 .message-list {
-    list-style: none;
-    padding: 0px;
-    margin: 0px;
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
 }
 
 .message {
-    display: block;
-    border: 1px solid var(--border-color);
-    margin: 5px;
-    padding: 5px;
-    background-color: var(--th-color);
-    color: var(--on-th);
-    text-align: left;
+  display: block;
+  border: 1px solid var(--border-color);
+  margin: 5px;
+  padding: 5px;
+  background-color: var(--th-color);
+  color: var(--on-th);
+  text-align: left;
 }
 
 .message a {
-    font-weight: 600;
+  font-weight: 600;
+}
+
+
+@media screen and (max-width: 768px) {
+  main .cluster {
+    max-width: 100%;
+  }
+  #daily-timetable th:nth-child(7){
+    display: none;
+  }
+  #daily-timetable td:nth-child(7){
+    display: none;
+  }
+  #daily-timetable th:nth-child(8){
+    display: none;
+  }
+  #daily-timetable td:nth-child(8){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main .cluster {
+    max-width: 100%;
+  }
+  #daily-timetable th:nth-child(6){
+    display: none;
+  }
+  #daily-timetable td:nth-child(6){
+    display: none;
+  }
+  #elective-courses th:nth-child(4){
+    display: none;
+  }
+  #elective-courses td:nth-child(4){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .cluster {
+    max-width: 100%;
+  }
+  #elective-courses th:nth-child(5){
+    display: none;
+  }
+  #elective-courses td:nth-child(5){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .cluster {
+    max-width: 100%;
+  }
+  #daily-timetable th:nth-child(3){
+    display: none;
+  }
+  #daily-timetable td:nth-child(3){
+    display: none;
+  }
+}
+
+#daily-timetable, #elective-courses {
+  flex:5 1;
+}
+
+#messages, #courses {
+  flex: 3 1 200px;
 }
