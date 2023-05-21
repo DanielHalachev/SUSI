@@ -1,0 +1,158 @@
+main {
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  flex: 1;
+}
+
+.filters {
+  margin: 10px auto;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  align-items: center;
+  align-content: center;
+  gap: 20px;
+  border-bottom: 1px solid var(--on-primary); 
+  padding-bottom: 10px;
+  width: 100%;
+}
+
+.filters * {
+  margin: auto 0px;
+}
+
+/* Label */
+.filters label {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  gap: 5px;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+}
+
+.tabline {
+  min-width: 100%;
+}
+
+.tabline button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+  color: #333;
+  border-radius: 0px;
+}
+
+.tabcontent {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  max-height: 100%;
+  flex-wrap: wrap;
+}
+
+.tabcontent > div {
+  display: none;
+  min-width: 300px;
+}
+
+.tabcontent .active {
+  display: flex !important;
+}
+
+.messages-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  flex: 1;
+}
+
+.message-list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow-y: auto;
+  max-height: 100%;
+  width: 100%;
+  gap: 10px;
+  max-height: 440px;
+}
+
+.message {
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.message p {
+  font-style:italic;
+}
+
+.message:hover {
+  background-color: #e6e6e6;
+}
+
+.message-preview {
+  background-color: #f2f2f2;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 10px;
+  display: none;
+}
+
+
+.message-active {
+  background-color: #e6e6e6;
+}
+
+.message-active .message-preview {
+  display: block;
+}
+
+.message-form-container {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  flex: 1;
+}
+
+.message-form-container h2 {
+  align-self: center;
+}
+
+.message-form-container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 20px;
+  flex:1;
+}
+
+.message-form-container form textarea {
+  margin-bottom: 20px;
+  flex: 4;
+  font-size: 16px;
+  padding: 10px;
+  height: 100%;
+}
+
+.message-form-container form button {
+  max-width: 250px;
+}
+
+div.active {
+  display: flex;
+}

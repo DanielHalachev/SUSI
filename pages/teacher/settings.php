@@ -70,7 +70,7 @@ include "./../../includes/teacher/header.php"
     </table>
 </div>
 <div class="tabs">
-    <div class="tabline">
+    <div class="neutral tabline">
 <!--        <button class="neutral tablinks" onclick="openTab(event, 'taxes')">Такси</button>-->
         <button class="neutral tablinks" onclick="openTab(event, 'health-insurance')">Здравно осигуряване</button>
         <button class="neutral tablinks" onclick="openTab(event, 'logins')">Логвания</button>
