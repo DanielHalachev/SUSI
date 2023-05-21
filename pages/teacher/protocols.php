@@ -14,7 +14,7 @@ include "./../../includes/teacher/header.php"
 ?>
 
 <main id="protocols-main">
-    <div class="container">
+    <!-- <div class="container"> -->
     <h1>Попълване на протоколи</h1>
         <h2>За <span style="font-weight: bold">2022/2023 юнска </span> сесия</h2>
     <div class="selectors">
@@ -71,11 +71,11 @@ include "./../../includes/teacher/header.php"
         </select>
     </div>
         <button id="search-button">Търси</button>
-        <h2 id="protocol-name">СИ: ЗД <span style="font-weight: bold">Статистика и емпирични методи</span> &nbsp;&nbsp;
-            <a href="#"><span style="color: #000" class="export fa fa-file-csv"></span></a>
-            &nbsp;&nbsp;
-            <a href="#"><span class="export fa fa-file-pdf" style="color: #000"></span></a>
-        </h2>
+  <h2 id="protocol-name">СИ: ЗД
+    <span style="font-weight: bold">Статистика и емпирични методи</span> 
+    <span class="fa fa-file-csv"></span>
+    <span class="fa fa-file-pdf"></span>
+  </h2>
         <table id="grades-table">
             <thead>
                 <th><a href="#">№ <span class="fa fa-sort"></span></a></th>
@@ -97,7 +97,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -115,7 +114,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -133,7 +131,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -151,7 +148,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -169,7 +165,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -187,7 +182,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -205,7 +199,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -223,7 +216,6 @@ include "./../../includes/teacher/header.php"
                 <td>СИ</td>
                 <td>3</td>
                 <td>
-                    <br>
                     <button class="two-grade">2</button>
                     <button class="three-grade">3</button>
                     <button class="four-grade">4</button>
@@ -237,7 +229,7 @@ include "./../../includes/teacher/header.php"
         <div id="right-button">
             <button id="send-button">Изпрати за одобрение</button>
         </div>
-    </div>
+    <!-- </div> -->
 
 
 
