@@ -1,67 +1,67 @@
-.selectors {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
+main {
+  display: grid;
+  grid-gap: 10px;
 }
 
-main {
-    display: grid;
-    grid-gap: 10px;
+.selectors {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  grid-gap: 10px;
+  grid-auto-flow: dense;
 }
 
 .selectors select {
-    /* font-size: 20px; */
-    text-align: center;
-    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  text-align: center;
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
 }
 
 .two-grade {
-    color: #fff;
-    background-color: #be0000;
+  color: #fff;
+  background-color: #be0000;
 }
 
 .two-grade:hover {
-    background-color: #d9231a;
+  background-color: #d9231a;
 }
 
 .three-grade {
-    color: #fff;
-    background-color: #E99200;
+  color: #fff;
+  background-color: #E99200;
 }
 
 .three-grade:hover {
-    background-color: #F0A019;
+  background-color: #F0A019;
 }
 
 .four-grade {
-    color: #fff;
-    background-color: #F0C619;
+  color: #fff;
+  background-color: #F0C619;
 }
 
 .four-grade:hover {
-    background-color: #FBCC0A;
+  background-color: #FBCC0A;
 }
 
 .five-grade {
-    color: #fff;
-    background-color: #1C85F4;
+  color: #fff;
+  background-color: #1C85F4;
 }
 
 .five-grade:hover {
-    background-color: #4294EA;
+  background-color: #4294EA;
 }
 
 .six-grade {
-    color: #fff;
-    background-color: #005d2f;
+  color: #fff;
+  background-color: #005d2f;
 }
 
 .six-grade:hover {
-    background-color: #007d46;
+  background-color: #007d46;
 }
 
 #protocol-name {
-    margin-top: 18px;
+  margin-top: 18px;
 }
 
 #protocol-name span.fa {
@@ -70,40 +70,133 @@ main {
 }
 
 #grades-table {
-    background-color: var(--td-color);
-    color: var(--on-td);
-    margin-bottom: 24px;
-    border-collapse: collapse;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+  background-color: var(--td-color);
+  color: var(--on-td);
+  margin-bottom: 24px;
+  border-collapse: collapse;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
 }
 
 #grades-table thead tr {
-    background-color: var(--th-color);
+  background-color: var(--th-color);
   color: var(--on-th);
 }
 
 #grades-table tr td:last-child {
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  gap: 10px;
   justify-content: center;
 }
 
 #grades-table tr td:last-child button {
   padding: 0px 12px;
   border-radius: 6px;
-  font-size: 1.2em;
   font-weight: bold;
 }
 
 .field-grade {
-    text-align: center;
+  text-align: center;
+  width: 50px;
 }
 
 #send-button {
-    box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
+  box-shadow: 0 0 0.3rem rgba(0, 0, 0, 0.3);
 }
 
 #right-button {
-    text-align: right;
+  text-align: right;
+}
+
+@media (max-width: 1200px){
+  #grades-table tr th:nth-of-type(4) {
+    display: none;
+  }
+  #grades-table tr td:nth-of-type(4) {
+    display: none;
+  }
+}
+
+@media (max-width: 1000px){
+  #grades-table tr th:nth-of-type(6) {
+    display: none;
+  }
+  #grades-table tr td:nth-of-type(6) {
+    display: none;
+  }
+}
+
+@media (max-width: 900px){
+  #grades-table tr th:nth-of-type(7) {
+    display: none;
+  }
+  #grades-table tr td:nth-of-type(7) {
+    display: none;
+  }
+}
+
+@media (max-width: 800px){
+  #grades-table tr th:nth-of-type(2) {
+    max-width: 70px;
+  }
+}
+
+@media (max-width: 700px){
+  main {
+    padding: 15px;
+  }
+  #grades-table tr th:nth-of-type(1) {
+    display: none;
+  }
+  #grades-table tr td:nth-of-type(1) {
+    display: none;
+  }
+}
+@media (max-width: 600px) {
+  #grades-table tr th:nth-of-type(4) {
+    display: initial;
+  }
+  #grades-table tr td:nth-of-type(4) {
+    display: initial;
+  }
+  #grades-table tr th:nth-of-type(2), #grades-table tr td:nth-of-type(2) {
+    max-width: none;
+  }
+  #grades-table tr td:last-child{
+    width: 100%;
+    border-top: 1px solid var(--border-color);
+  }
+  #grades-table thead tr {
+    display: grid;
+  }
+  #grades-table tbody,
+  #grades-table tbody tr {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  #grades-table tr {
+    width: 100%;
+    margin-bottom: 10px;
+    border: 1px solid var(--border-color);
+  }
+
+  #grades-table tbody tr td {
+    border: none;
+  }
+
+  #grades-table td:not(:last-child), #grades-table th:not(:last-child) {
+    display: inline-block;
+    vertical-align: top;
+  }
+  #send-button {
+    width: 100%;
+  }
+}
+@media (max-width: 400px){
+  main {
+    padding: 5px;
+  }
 }
