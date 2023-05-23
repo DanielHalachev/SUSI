@@ -33,8 +33,9 @@ main table thead tr:first-of-type th {
   align-items: center;
   align-content: center;
   gap: 20px;
-  border-bottom: 1px solid var(--on-primary); 
+  border-bottom: 1px solid var(--border-color);
   padding-bottom: 10px;
+  padding-top: 5px;
   width:100%;
   justify-content: flex-start;
 }
@@ -93,3 +94,14 @@ main table thead tr:first-of-type th {
     text-align: center;
   }
 }
+
+@media (max-width: 768px) {
+  .filters {
+    justify-content: center;
+    position: sticky;
+    top: 51px;
+    background-color: var(--back-color);
+    color: var(--on-background);
+  }
+}
+

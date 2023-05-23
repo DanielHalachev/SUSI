@@ -13,8 +13,9 @@ main {
   align-items: center;
   align-content: center;
   gap: 20px;
-  border-bottom: 1px solid var(--on-primary); 
+  border-bottom: 1px solid var(--border-color); 
   padding-bottom: 10px;
+  padding-bottom: 5px;
 }
 
 .filters * {
@@ -68,7 +69,8 @@ main div{
   input[type="search"] {
     margin-bottom: 10px;
     position: sticky;
-    top: 55px;
+    top: 51px;
+    background-color: var(--back-color);
   }
 }
 

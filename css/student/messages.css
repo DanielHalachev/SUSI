@@ -15,8 +15,9 @@ main {
   align-content: center;
   gap: 20px;
   border-bottom: 1px solid var(--on-primary); 
-  padding-bottom: 10px;
   width: 100%;
+  padding-bottom: 10px;
+  padding-top: 5px;
 }
 
 .filters * {
@@ -155,4 +156,12 @@ main {
 
 div.active {
   display: flex;
+}
+
+@media (max-width: 768px) {
+  .filters {
+    background-color: var(--back-color);
+    top: 51px;
+    position: sticky;
+  }
 }
