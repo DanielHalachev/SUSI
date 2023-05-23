@@ -38,6 +38,24 @@
         </div>
 
         <div class="label-input-pair">
+          <span>Титуляр:</span>
+          <select name="teacher" class="input-field">
+            <option value="" disabled selected>Изберете титуляр</option>
+            <?php
+            $teachers = [
+                'Ангел Дичев',
+                'Милен Чечев',
+                'Олег Константинов'
+            ];
+            foreach ($teachers as $teacher) :
+              ?>
+              <option value="<?= $teacher ?>"><?= $teacher ?></option>
+            <?php endforeach; ?>
+          </select>
+        </div>
+
+
+        <div class="label-input-pair">
           <span>Семестър:</span>
           <select name="semester" class="input-field">
             <option value="winter">Зимен</option>
@@ -46,35 +64,18 @@
         </div>
 
         <div class="label-input-pair">
-          <span>Титуляр:</span>
-          <select name="teacher" class="input-field">
-            <option value="" disabled selected>Изберете титуляр</option>
-            <?php
-            $teachers = [
-              'Ангел Дичев',
-              'Милен Чечев',
-              'Олег Константинов'
-            ];
-            foreach ($teachers as $teacher) :
-            ?>
-              <option value="<?= $teacher ?>"><?= $teacher ?></option>
-            <?php endforeach; ?>
+          <span>Начин на оценяване:</span>
+          <select class="scoring-options">
+            <option value="" disabled selected>Изберете начин на оценяване</option>
+            <option value="1">Изпит</option>
+            <option value="2">Текуща оценка</option>
+            <option value="3">Изпит + текуща оценка</option>
           </select>
         </div>
 
         <div class="label-input-pair">
           <span>ECTS:</span>
           <input type="number" name="ects" class="input-field" />
-        </div>
-
-        <div class="label-input-pair">
-          <span>Начин на оценяване:</span>
-          <select class="scoring-options">
-              <option value="" disabled selected>Изберете начин на оценяване</option>
-              <option value="1">Изпит</option>
-              <option value="2">Текуща оценка</option>
-              <option value="3">Изпит + текуща оценка</option>
-          </select>
         </div>
       </div>
 

@@ -29,7 +29,7 @@ $users = [
             ?>
             <td><label><input type="checkbox" checked/><?=$header?></label></td>
         <?php endforeach;?>
-            <td><a class="positive" href="#"><i class="fa fa-plus"></i>Нов потребител</a></td>
+            <td><a class="positive" href="user.php"><i class="fa fa-plus"></i>Нов потребител</a></td>
     </div>
 
     <div>
