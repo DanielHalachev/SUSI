@@ -8,15 +8,39 @@ include "./../../includes/javascript.php"
 ?>
 <link rel="stylesheet" type="text/css" href="./../../css/student/settings.css"/>
 <script src="./../../js/tabs.js"></script>
-    <script>
-window.addEventListener('DOMContentLoaded', function() {
-  var hash = window.location.hash;
-  if (hash) {
-    var sectionId = hash.substring(1); // Remove the leading '#'
-    openTab(event, sectionId);
+<!--     <script> -->
+<!-- window.addEventListener('DOMContentLoaded', function() { -->
+<!--   var hash = window.location.hash; -->
+<!--   if (hash) { -->
+<!--     var sectionId = hash.substring(1); // Remove the leading '#' -->
+<!--     openTab(event, sectionId); -->
+<!--   } -->
+<!-- }); -->
+<!--     </script> -->
+<script>
+window.addEventListener('load', function() {
+  // Read the query parameter from the URL
+  const urlParams = new URLSearchParams(window.location.search);
+  const tab = urlParams.get('tab');
+  if (tab){
+    openTab(event, tab);
   }
 });
-    </script>
+</script>
+<script>
+window.addEventListener('load', function() {
+  const th = localStorage.getItem('theme');
+  if (th){
+    if (th === 'theme-light'){
+      document.getElementById('theme-select').value = 'light';
+    } else if(th === 'theme-dark'){
+      document.getElementById('theme-select').value = 'dark';
+    } else if(th === 'theme-custom') {
+      document.getElementById('theme-select').value = 'custom';
+    }
+  }
+});
+</script>
 <script>
 window.addEventListener('load', function() {
   const mainCheckbox = document.querySelector('.main-option input');
@@ -308,7 +332,7 @@ include "./../../includes/student/header.php"
       <option value="light">Светла</option>
       <option value="dark">Тъмна</option>
       <option value="device">От устройството</option>
-      <option value="custom">По Избор</option>
+      <option value="custom">По избор</option>
       </select>
       </label>
       

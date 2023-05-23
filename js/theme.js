@@ -48,19 +48,24 @@ function changeTheme() {
   const themeSelect = document.getElementById('theme-select');
   const selectedOption = themeSelect.value;
   const customThemeDiv = document.getElementById('custom-theme');
+  var logo = document.querySelector('.logo');
 
   if (selectedOption === 'light') {
     setTheme('theme-light');
+    logo.src = "./../../images/logo.png";
     customThemeDiv.style.display = 'none';
   } else if (selectedOption === 'dark') {
     setTheme('theme-dark');
+    logo.src = "./../../images/dark-logo.png";
     customThemeDiv.style.display = 'none';
   } else if (selectedOption === 'device') {
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
     setTheme(prefersDark ? 'theme-dark' : 'theme-light');
+    logo.src = prefersDark ? "./../../images/dark-logo.png" : "./../../images/logo.png";
     customThemeDiv.style.display = 'none';
   } else if (selectedOption === 'custom') {
     setTheme('theme-custom');
+    logo.src = "./../../images/logo.png";
     customThemeDiv.style.display = 'block';
   }
 }

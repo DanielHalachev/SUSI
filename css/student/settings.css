@@ -27,7 +27,7 @@ main {
   justify-content: space-evenly;
   align-items: space-between;
   flex: 1;
-  gap: 20px;
+  gap: 10px;
 }
 
 .personal-info img {
