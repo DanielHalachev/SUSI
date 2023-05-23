@@ -32,7 +32,7 @@ $courses = [
         <td><label><input type="checkbox" checked/><?=$header?></label></td>
         <?php endforeach;?>
         <td>
-            <a class="positive" href="#" target="_blank"><i class="fa fa-plus"></i>Нов курс</a>
+            <a class="positive" title="Същото като в Задължителни дисциплини" href="#" style="opacity: 50%;"><i class="fa fa-plus"></i>Нов курс</a>
         </td>
     </div>
     <div>

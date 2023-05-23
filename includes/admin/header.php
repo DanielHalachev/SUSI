@@ -5,7 +5,7 @@
         ['Задължителни дисциплини', 'bars', 'courses'],
         ['Избираеми дисциплини', 'check', 'elective'],
         ['Кампании', 'check', 'campaigns'], //dropdown - semestrialni taksi / izbiraemi disciplini
-        ['Съобщения', 'envelope', 'message'],
+//        ['Съобщения', 'envelope', 'message'],
     ];
     ?>
     <a href="../../pages/admin/dashboard.php"><img class="logo" src="../../images/logo.png"/></a>
