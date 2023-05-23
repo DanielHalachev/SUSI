@@ -10,33 +10,22 @@
           График
         </li>
       </a>
-      <a href="./protocols.php">
+      <a href="./grades.php">
         <li>
-          <span class="fa fa-pencil"></span>
-          Протоколи
+          <span class="fa fa-file-pen"></span>
+          Оценки
         </li>
       </a>
-      <a href="./courses.php">
+      <a href="./elective.php" aria-haspopup="true">
         <li>
-          <span class="fa fa-folder-open"></span>
-          Управление на курсове
-          <!-- <ul class="dropdown" aria-label="submenu"> -->
-          <!--     <li><a>Списък избираеми дисциплини</a></li> -->
-          <!--     <li><a>Предпочитани избираеми дисциплини</a></li> -->
-          <!--     <li><a>Моите избираеми дисциплини</a></li> -->
-          <!-- </ul> -->
-        </li>
-      </a>
-      <a href="./elective.php">
-        <li>
-          <span class="fa fa-check-square"></span>
-          Кампания за избираеми дисциплини
-        </li>
-      </a>
-      <a href="./queries.php">
-        <li>
-          <span class="fa fa-info-circle"></span>
-          Справки
+          <span class="fa fa-graduation-cap"></span>
+          Избираеми дисциплини
+          <ul class="dropdown" aria-label="submenu">
+            <a href="./elective.php"><li>Всички избираеми дисциплини</li></a>
+            <a href="./elective.php?filter=marked"><li>Маркирани избираеми дисциплини</li></a>
+            <a href="./elective.php?filter=enrolled"><li>Записани избираеми дисциплини</li></a>
+            <a href="./elective.php?filter=enrolled-in-queue"><li>Записани в опашка избираеми дисциплини</li></a>
+          </ul>
         </li>
       </a>
       <a href="./messages.php">
@@ -48,14 +37,15 @@
       <a>
         <li id="username">
           <span class="fa fa-user"></span>
-          проф. д-р Иван Георгиев
+          62547
           <ul class="user-dropdown">
             <div class="user-info">
-              <img class="profile-pic" src="./../../images/profile-pic-teacher.jpg"/>
+              <img class="profile-pic" src="./../../images/profile-pic.jpg"/>
               <div>
-                <p><small>Иван Христов Георгиев</small></p>
-                <p><small>кат. "Вероятности и статистика"</small></p>
-              </div>
+                <p><small>Иван Петров Иванов</small></p>
+                <p><small>Софтуерно инженерство</small></p>
+                <p><small>Курс 3</small></p>
+              </div>  
             </div>
             <hr/>
             <a href="./settings.php">
@@ -64,12 +54,18 @@
                 Моите данни
               </li>
             </a>
+            <a href="./settings.php#taxes">
+              <li>
+                <span class="fa fa-money-bill-1-wave"></span>
+                Такси
+              </li>
+            </a>
             <a href="./settings.php#health-insurance">
-            <li>
-              <span class="fa fa-heart-pulse"></span>
-              Здравно осигуряване
-            </li>
-          </a>
+              <li>
+                <span class="fa fa-heart-pulse"></span>
+                Здравно осигуряване
+              </li>
+            </a>
             <a href="./settings.php#logins">
               <li>
                 <span class="fa fa-right-to-bracket"></span>
@@ -106,3 +102,4 @@
     </ul>
   </nav>
 </header>
+
