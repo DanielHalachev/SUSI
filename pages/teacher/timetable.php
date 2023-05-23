@@ -8,7 +8,6 @@
     ?>
     <link rel="stylesheet" type="text/css" href="../../css/teacher/timetable.css"/>
     <script src="./../../js/menu.js" type="text/javascript"></script>
-    <script type="text/javascript" src="./../../js/multiple-select.js"></script>
     <script type="text/javascript">
       var initialTableContent;
       window.addEventListener("load", function() {
@@ -147,10 +146,6 @@ include "./../../includes/teacher/header.php"
         </tr>
         </tbody>
     </table>
-
-
-
-
 
 <script type="text/javascript">
   // Add a click event listener to the table cells containing activities

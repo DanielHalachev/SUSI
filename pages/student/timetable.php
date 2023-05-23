@@ -40,99 +40,100 @@ include "./../../includes/student/header.php";
     </select>
     <button onclick="restoreDefaults()">Връщане по подразбиране</button>
   </div>
-  <!-- <table id="pc"> -->
-  <!--   <thead> -->
-  <!--     <tr> -->
-  <!--       <th></th> -->
-  <!--       <th>8:00</th> -->
-  <!--       <th>9:00</th> -->
-  <!--       <th>10:00</th> -->
-  <!--       <th>11:00</th> -->
-  <!--       <th>12:00</th> -->
-  <!--       <th>13:00</th> -->
-  <!--       <th>14:00</th> -->
-  <!--       <th>15:00</th> -->
-  <!--       <th>16:00</th> -->
-  <!--       <th>17:00</th> -->
-  <!--       <th>18:00</th> -->
-  <!--       <th>19:00</th> -->
-  <!--       <th>20:00</th> -->
-  <!--       <th>21:00</th> -->
-  <!--     </tr> -->
-  <!--   </thead> -->
-  <!--   <tbody> -->
-  <!--     <tr> -->
-  <!--       <th>Понеделник</th> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td class="exercise" colspan="2">Математически анализ<br/>проф. Иванов, 210 ФМИ</td> -->
-  <!--       <td class="lecture" colspan="3">Операционни системи<br/>доц. Петров, 101 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--     </tr> -->
-  <!--     <tr> -->
-  <!--       <th>Вторник</th> -->
-  <!--       <td class="both" colspan="3">Архитектура на компютърните системи<br/>доц. Георгиев, 103 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td class="lecture" colspan="2">Математически анализ<br/>проф. Иванов, 210 ФМИ</td> -->
-  <!--       <td class="exercise" colspan="3">Операционни системи<br/>доц. Петров, 101 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--     </tr> -->
-  <!--     <tr> -->
-  <!--       <th>Сряда</th> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td class="exercise" colspan="2">Линейна алгебра<br/>проф. Георгиев, 201 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td class="lecture" colspan="2">Линейна алгебра<br/>проф. Георгиев, 201 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--     </tr> -->
-  <!--     <tr> -->
-  <!--       <th>Четвъртък</th> -->
-  <!--       <td></td> -->
-  <!--       <td class="lecture" colspan="2">Програмиране на C++<br/>доц. Димитров, 104 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td class="exercise" colspan="2">Програмиране на C++<br/>доц. Димитров, 104 ФМИ</td> -->
-  <!--       <td class="both" colspan="2">Теория на алгоритмите<br/>проф. Николов, 105 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--     </tr> -->
-  <!--     <tr> -->
-  <!--       <th>Петък</th> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td class="lecture" colspan="2">Функционално програмиране<br/>проф. Костадинов, 102 ФМИ</td> -->
-  <!--       <td class="exercise" colspan="2">Функционално програмиране<br/>проф. Костадинов, 102 ФМИ</td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--       <td></td> -->
-  <!--     </tr>  -->
-  <!--   </tbody> -->
-  <!-- </table> -->
+  <table id="pc">
+    <thead>
+      <tr>
+        <th></th>
+        <th>8:00</th>
+        <th>9:00</th>
+        <th>10:00</th>
+        <th>11:00</th>
+        <th>12:00</th>
+        <th>13:00</th>
+        <th>14:00</th>
+        <th>15:00</th>
+        <th>16:00</th>
+        <th>17:00</th>
+        <th>18:00</th>
+        <th>19:00</th>
+        <th>20:00</th>
+        <th>21:00</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th>Понеделник</th>
+        <td></td>
+        <td></td>
+        <td class="exercise" colspan="2">Математически анализ<br/>проф. Иванов, 210 ФМИ</td>
+        <td class="lecture" colspan="3">Операционни системи<br/>доц. Петров, 101 ФМИ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Вторник</th>
+        <td class="both" colspan="3">Архитектура на компютърните системи<br/>доц. Георгиев, 103 ФМИ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td class="lecture" colspan="2">Математически анализ<br/>проф. Иванов, 210 ФМИ</td>
+        <td class="exercise" colspan="3">Операционни системи<br/>доц. Петров, 101 ФМИ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Сряда</th>
+        <td></td>
+        <td></td>
+        <td class="exercise" colspan="2">Линейна алгебра<br/>проф. Георгиев, 201 ФМИ</td>
+        <td></td>
+        <td></td>
+        <td class="lecture" colspan="2">Линейна алгебра<br/>проф. Георгиев, 201 ФМИ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Четвъртък</th>
+        <td></td>
+        <td class="lecture" colspan="2">Програмиране на C++<br/>доц. Димитров, 104 ФМИ</td>
+        <td></td>
+        <td class="exercise" colspan="2">Програмиране на C++<br/>доц. Димитров, 104 ФМИ</td>
+        <td class="both" colspan="2">Теория на алгоритмите<br/>проф. Николов, 105 ФМИ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr>
+        <th>Петък</th>
+        <td></td>
+        <td></td>
+        <td class="lecture" colspan="2">Функционално програмиране<br/>проф. Костадинов, 102 ФМИ</td>
+        <td class="exercise" colspan="2">Функционално програмиране<br/>проф. Костадинов, 102 ФМИ</td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr> 
+    </tbody>
+  </table>
+
   <script type="text/javascript">
   // Add a click event listener to the table cells containing activities
   var activityCells = document.querySelectorAll("td.lecture, td.exercise");
@@ -370,11 +371,10 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>14:00</th>
-      <td></td>
+      <td class="lecture" rowspan="2">Математически анализ<br>проф. Иванов, 210 ФМИ</td>
     </tr>
     <tr>
       <th>15:00</th>
-      <td class="lecture" rowspan="2">Функционално програмиране<br/>проф. Костадинов, 102 ФМИ</td>
     </tr>
     <tr>
       <th>16:00</th>
@@ -382,11 +382,9 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>17:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>18:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>19:00</th>
@@ -413,11 +411,10 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>10:00</th>
-      <td></td>
+      <td class="exercise" rowspan="2">Линейна алгебра<br>проф. Георгиев, 201 ФМИ</td>
     </tr>
     <tr>
       <th>11:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>12:00</th>
@@ -429,11 +426,10 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>14:00</th>
-      <td></td>
+      <td class="lecture" rowspan="2">Линейна алгебра<br>проф. Георгиев, 201 ФМИ</td>
     </tr>
     <tr>
       <th>15:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>16:00</th>
@@ -468,11 +464,10 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>9:00</th>
-      <td></td>
+      <td class="lecture" rowspan="2">Програмиране на C++<br>доц. Димитров, 104 ФМИ</td>
     </tr>
     <tr>
       <th>10:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>11:00</th>
@@ -480,19 +475,17 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>12:00</th>
-      <td></td>
+      <td class="exercise" rowspan="2">Програмиране на C++<br>доц. Димитров, 104 ФМИ</td>
     </tr>
     <tr>
       <th>13:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>14:00</th>
-      <td></td>
+      <td class="both" rowspan="2">Теория на алгоритмите<br/>проф. Николов, 105 ФМИ</td>
     </tr>
     <tr>
       <th>15:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>16:00</th>
@@ -531,19 +524,17 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>10:00</th>
-      <td></td>
+      <td class="lecture" rowspan="2">Функционално програмиране<br/>проф. Костадинов, 102 ФМИ</td>
     </tr>
     <tr>
       <th>11:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>12:00</th>
-      <td></td>
+      <td class="exercise" rowspan="2">Функционално програмиране<br>проф. Костадинов, 102 ФМИ</td>
     </tr>
     <tr>
       <th>13:00</th>
-      <td></td>
     </tr>
     <tr>
       <th>14:00</th>
@@ -555,10 +546,11 @@ dialog.appendChild(hourSelect);
     </tr>
     <tr>
       <th>16:00</th>
+      <td></td>
     </tr>
     <tr>
       <th>17:00</th>
-      <td class="both" rowspan="2">Теория на алгоритмите<br/>проф. Николов, 105 ФМИ</td>
+      <td></td>
     </tr>
     <tr>
       <th>18:00</th>
