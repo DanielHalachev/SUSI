@@ -30,7 +30,7 @@ nav {
   flex-wrap: wrap;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   display: flex;
   flex-flow: row;
@@ -70,7 +70,7 @@ nav ul li ul {
 
 nav ul li .user-dropdown {
   right: 0;
-  left:auto;
+  left: auto;
   min-width: 350px;
 }
 
@@ -169,7 +169,7 @@ nav li:focus-within a {
     visibility: hidden;
     opacity: 0;
     background: none;
-    margin-top: 10;
+    margin-top: 10px;
     box-shadow: none;
   }
 
@@ -185,7 +185,10 @@ nav li:focus-within a {
     opacity: 1;
   }
 
-  .user-info, .user-info div, .user-info div p, .user-info img {
+  .user-info,
+  .user-info div,
+  .user-info div p,
+  .user-info img {
     display: none;
   }
 
@@ -197,10 +200,10 @@ nav li:focus-within a {
 }
 
 nav ul.show {
-  display:block;
+  display: block;
 }
 
-@media (min-width:768px) { 
+@media (min-width: 768px) {
   #username {
     background: var(--menu-gradient);
   }

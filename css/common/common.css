@@ -73,6 +73,42 @@
 
   --menu-gradient: linear-gradient(to bottom, #333333 0%, #222222 100%);
 }
+.theme-custom {
+  --primary-color: #ffffff; /* The most frequent color among components*/
+  --secondary-color: #C99818; /* The color used for accent, e.g. in controls, links, highlights*/
+
+  --back-color: #eef2c1; /* Appears behind scrollable content, e.g behind cards */
+  --back-color:#fff;
+  --surface-color: #ffffff; /* The surface of components */
+  --error-color: #be0000;
+
+  /* Text colors */
+  --on-primary: #000000;
+  --on-secondary: #000000;
+  --on-background: #000000;
+  --on-surface: #000000;
+  --on-error: #ffffff;
+
+  --positive: #005d2f;
+  --positive-hover: #007d46;
+  --negative: #be0000;
+  --negative-hover: #d9231a;
+  --neutral: #dedede;
+  --neutral-hover: #f0f0f0;
+
+  --on-positive: #ffffff;
+  --on-negative: #ffffff;
+  --on-neutral: #000000;
+
+  --th-color: #eee;
+  --td-color: #ffffff;
+  --on-th: #000000;
+  --on-td: #000000;
+
+  --border-color: #ccc;
+
+  --menu-gradient: linear-gradient(to bottom, #eee 0%, #fff 100%);
+}
 
 * {
   margin: 0;
