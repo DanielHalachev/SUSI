@@ -69,7 +69,7 @@
             <a href="./settings.php?tab=logins">
               <li>
                 <span class="fa fa-right-to-bracket"></span>
-                Логавания
+                Логвания
               </li>
             </a>
             <a href="./settings.php?tab=card-settings">
