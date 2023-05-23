@@ -1,11 +1,18 @@
+/* Label */
+label {
+  color: var(--on-surface);
+}
+
 /* Text fields */
 input[type="text"],
 input[type="password"],
 input[type="search"] {
-  padding: 10px;
-  border: 1px solid #ccc;
+  padding: 7px;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: 16px;
+  background-color: var(--surface-color);
+  color: var(--on-surface);
 }
 
 input[type="text"]:focus,
@@ -58,11 +65,29 @@ input[type="checkbox"]:checked:after::content {
   transform: translateY(-1em);
 }
 
+textarea {
+  padding: 7px;
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
+  background-color: var(--surface-color);
+  color: var(--on-surface);
+}
+
+textarea:hover {
+  border: 1px solid var(--secondary-color);
+}
+
+textarea:focus {
+  border: 1px solid var(--secondary-color);
+  outline: 1px solid var(--secondary-color);
+}
+
 /* Select */
 select {
-  background: var(--surface-color);
+  background-color: var(--surface-color);
+  color: var(--on-surface);
   padding: 7px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: 16px;
   /* appearance: none; */
@@ -81,7 +106,8 @@ select:focus {
 select option {
   appearance: none;
   -webkit-appearance: searchfield;
-  color: #333;
+  background-color: var(--surface-color);
+  color: var(--on-surface)
 }
 
 select option:hover {
@@ -98,7 +124,7 @@ body::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-track {
-  background: #f1f1f1;
+  background: var(--surface-color);
 }
 
 ::-webkit-scrollbar-thumb {
@@ -107,7 +133,7 @@ body::-webkit-scrollbar {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--on-surface);
 }
 
 /* Button */

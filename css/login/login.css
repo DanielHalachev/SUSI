@@ -10,8 +10,9 @@ main {
 .item {
   flex: 1;
   padding: 20px;
-  background-color: #fff;
-  border: 1px solid #ddd;
+  background-color: var(--surface-color);
+  color: var(--on-surface);
+  border: 1px solid var(--border-color);
   margin: 10px;
   display: flex;
   flex-direction: column;
@@ -35,7 +36,7 @@ main {
 .item input[type="password"] {
   padding: 10px;
   margin-bottom: 20px;
-  border: 1px solid #ccc;
+  border: 1px solid var(--border-color);
   border-radius: 5px;
   font-size: 16px;
 }
@@ -56,10 +57,11 @@ main {
 
 /* News feed section styles */
 #news_container {
-  background-color: #f8f8f8;
+  background-color: var(--surface-color);
+  color: var(--on-surface);
   overflow-y: auto;
   max-height: 450px;
-  border: 2px solid #ddd;
+  /* border: 2px solid var(--border-color); */
 }
 
 .news-item:first-of-type {
@@ -69,7 +71,7 @@ main {
 .news-item {
   margin-bottom: 20px;
   padding: 10px;
-  border: 1px solid #ddd;
+  border: 1px solid var(--border-color);
   border-left: none;
   border-right: none;
 }
@@ -90,10 +92,11 @@ main {
 .item h2 {
   position: sticky;
   top: 0;
-  background-color: #fff;
+  background-color: var(--background-color);
+  color: var(--on-background);
   margin-top: 0;
   padding: 20px;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid var(--border-color);
 }
 
 @media screen and (max-width: 768px) {

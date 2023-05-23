@@ -5,16 +5,13 @@ main {
   justify-content: center;
   gap: 20px;
   padding: 20px;
-  flex-grow: 1;
-  min-height: calc(100vh - 108px);
+  min-height: calc(100vh - 120px);
 }
 
 .cluster {
   display: flex;
-  flex-flow: column;
-  width: 100%;
-  max-width: 450px;
-  max-height: 300px;
+  flex: 1;
+  flex-direction: column;
   background-color: var(--surface-color);
   color: var(--on-surface);
   border-radius: 10px;
@@ -92,4 +89,66 @@ main {
   main .cluster {
     max-width: 100%;
   }
+  #daily-timetable th:nth-child(7){
+    display: none;
+  }
+  #daily-timetable td:nth-child(7){
+    display: none;
+  }
+  #daily-timetable th:nth-child(8){
+    display: none;
+  }
+  #daily-timetable td:nth-child(8){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 650px) {
+  main .cluster {
+    max-width: 100%;
+  }
+  #daily-timetable th:nth-child(6){
+    display: none;
+  }
+  #daily-timetable td:nth-child(6){
+    display: none;
+  }
+  #elective-courses th:nth-child(4){
+    display: none;
+  }
+  #elective-courses td:nth-child(4){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 550px) {
+  main .cluster {
+    max-width: 100%;
+  }
+  #elective-courses th:nth-child(5){
+    display: none;
+  }
+  #elective-courses td:nth-child(5){
+    display: none;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  main .cluster {
+    max-width: 100%;
+  }
+  #daily-timetable th:nth-child(3){
+    display: none;
+  }
+  #daily-timetable td:nth-child(3){
+    display: none;
+  }
+}
+
+#daily-timetable, #elective-courses {
+  flex:5 1;
+}
+
+#messages, #courses {
+  flex: 3 1 200px;
 }

@@ -2,14 +2,59 @@
 .popup {
   position: absolute;
   background-color: var(--surface-color);
-  border: 1px solid #ccc;
+  color: var(--on-surface);
+  border: 1px solid var(--border-color);
+  border-radius: 5px;
   padding: 10px;
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
   z-index: 1;
-  max-width: 200px;
-  display: none;
+  max-width: 400px;
+  opacity: 0; /* Initial opacity set to 0 */
+  transition: opacity 0.3s ease; /* Transition for opacity property */
+  pointer-events: none; /* Prevent pointer events on hidden popups */
+  display: flex;
+}
+
+.popup.discipline {  
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.popup.professor {
+  flex-direction: row;
+  gap: 10px;
+}
+
+.popup.professor .image {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  width:60px;
+}
+
+.popup.professor img {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 1px solid var(--border-color);
+}
+
+.popup.professor .info {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  flex-wrap: wrap;
+}
+
+.popup.discipline span {
+  width: 100%;
+  text-align: justify;
 }
 
 .popup.visible {
-  display: block;
+  opacity: 1; /* Opacity set to 1 for visible popups */
+  pointer-events: auto; /* Enable pointer events for visible popups */
 }
+

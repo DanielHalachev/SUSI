@@ -3,12 +3,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 
 /* Common Variables */
-:root {
+.theme-light {
   --primary-color: #ffffff; /* The most frequent color among components*/
   --secondary-color: #C99818; /* The color used for accent, e.g. in controls, links, highlights*/
 
-  /* --back-color: #f8fae6;  */
   --back-color: #eef2c1; /* Appears behind scrollable content, e.g behind cards */
+  --back-color:#fff;
   --surface-color: #ffffff; /* The surface of components */
   --error-color: #be0000;
 
@@ -25,6 +25,89 @@
   --negative-hover: #d9231a;
   --neutral: #dedede;
   --neutral-hover: #f0f0f0;
+
+  --on-positive: #ffffff;
+  --on-negative: #ffffff;
+  --on-neutral: #000000;
+
+  --th-color: #eee;
+  --td-color: #ffffff;
+  --on-th: #000000;
+  --on-td: #000000;
+
+  --border-color: #ccc;
+
+  --menu-gradient: linear-gradient(to bottom, #eee 0%, #fff 100%);
+}
+.theme-dark {
+  --primary-color: #111111;
+  --secondary-color: #C99818;
+  --back-color: #222222;
+  --surface-color: #333333;
+  --error-color: #be0000;
+
+  /* Text colors */
+  --on-primary: #ffffff;
+  --on-secondary: #ffffff;
+  --on-background: #ffffff;
+  --on-surface: #ffffff;
+  --on-error: #ffffff;
+
+  --positive: #00b365;
+  --positive-hover: #00d77a;
+  --negative: #be0000;
+  --negative-hover: #d9231a;
+  --neutral: #808080;
+  --neutral-hover: #a0a0a0;
+
+  --on-positive: #ffffff;
+  --on-negative: #ffffff;
+  --on-neutral: #000000;
+
+  --th-color: #333333;
+  --td-color: #222222;
+  --on-th: #ffffff;
+  --on-td: #ffffff;
+
+  --border-color: #888888;
+
+  --menu-gradient: linear-gradient(to bottom, #333333 0%, #222222 100%);
+}
+.theme-custom {
+  --primary-color: #ffffff; /* The most frequent color among components*/
+  --secondary-color: #C99818; /* The color used for accent, e.g. in controls, links, highlights*/
+
+  --back-color: #eef2c1; /* Appears behind scrollable content, e.g behind cards */
+  --back-color:#fff;
+  --surface-color: #ffffff; /* The surface of components */
+  --error-color: #be0000;
+
+  /* Text colors */
+  --on-primary: #000000;
+  --on-secondary: #000000;
+  --on-background: #000000;
+  --on-surface: #000000;
+  --on-error: #ffffff;
+
+  --positive: #005d2f;
+  --positive-hover: #007d46;
+  --negative: #be0000;
+  --negative-hover: #d9231a;
+  --neutral: #dedede;
+  --neutral-hover: #f0f0f0;
+
+  --on-positive: #ffffff;
+  --on-negative: #ffffff;
+  --on-neutral: #000000;
+
+  --th-color: #eee;
+  --td-color: #ffffff;
+  --on-th: #000000;
+  --on-td: #000000;
+
+  --border-color: #ccc;
+
+  --menu-gradient: linear-gradient(to bottom, #eee 0%, #fff 100%);
 }
 
 * {
@@ -62,7 +145,7 @@ main {
 /* Semantic Classes */
 .positive {
   background: var(--positive);
-  color: #fff;
+  color: var(--on-positive);
 }
 
 .positive:hover {
@@ -71,7 +154,7 @@ main {
 
 .negative {
   background: var(--negative);
-  color: #fff;
+  color: var(--on-negative);
 }
 
 .negative:hover {
@@ -80,7 +163,9 @@ main {
 
 .neutral {
   background-color: var(--neutral);
+  color: var(--on-neutral);
 }
+
 .neutral:hover {
   background-color: var(--neutral-hover);
 }
@@ -115,6 +200,7 @@ h4,
 h5,
 h6 {
   font-weight: 500;
+  color: var(--on-surface);
 }
 
 h1 {

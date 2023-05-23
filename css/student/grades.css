@@ -5,10 +5,6 @@ main {
   flex: 1;
 }
 
-header, footer {
-  flex: 0;
-}
-
 .filters {
   margin: 10px auto;
   display: flex;
@@ -35,9 +31,12 @@ header, footer {
   gap: 5px;
 }
 
-
 .export {
   font-size: x-large;
+  cursor: pointer;
+}
+
+th {
   cursor: pointer;
 }
 

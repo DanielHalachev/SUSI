@@ -1,6 +1,7 @@
 /* Header */
 header {
   background-color: var(--surface-color);
+  color: var(--on-surface);
   display: flex;
   flex-direction: row;
   position: sticky;
@@ -8,7 +9,7 @@ header {
   padding: 0px 5px 0px 15px;
   justify-content: space-between;
   align-items: center;
-  border-bottom: 1px solid #ccc;
+  border-bottom: 1px solid var(--border-color);
   margin-bottom: auto;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
@@ -29,7 +30,7 @@ nav {
   flex-wrap: wrap;
 }
 
-nav ul{
+nav ul {
   list-style: none;
   display: flex;
   flex-flow: row;
@@ -54,8 +55,8 @@ nav li a:hover {
 }
 
 nav ul li ul {
-  background: #fff;
-  /* border: 1px solid #bbb; */
+  background: var(--surface-color);
+  color: var(--on-surface);
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   visibility: hidden;
   opacity: 0;
@@ -69,12 +70,11 @@ nav ul li ul {
 
 nav ul li .user-dropdown {
   right: 0;
-  left:auto;
-  min-width: 300px;
+  left: auto;
+  min-width: 350px;
 }
 
 nav ul li .user-dropdown p {
-  color: #333;
   cursor: auto;
   padding: 0px 10px;
 }
@@ -102,7 +102,6 @@ nav li:focus-within a {
 #menu-button {
   justify-content: center;
   align-items: center;
-  color: #333;
   font-size: 30px;
 }
 
@@ -120,13 +119,14 @@ nav li:focus-within a {
     left: 0;
     width: 100%;
     text-align: center;
-    background-color: #fff;
+    background-color: var(--surface-color);
+    color: var(--on-surface);
   }
 
   nav li {
     display: block;
     margin: 0;
-    border-bottom: 1px solid #bbb;
+    border-bottom: 1px solid var(--border-color);
   }
 
   nav li:last-child {
@@ -169,7 +169,7 @@ nav li:focus-within a {
     visibility: hidden;
     opacity: 0;
     background: none;
-    margin-top: 10;
+    margin-top: 10px;
     box-shadow: none;
   }
 
@@ -185,23 +185,27 @@ nav li:focus-within a {
     opacity: 1;
   }
 
-  .user-info, .user-info div, .user-info div p, .user-info img {
+  .user-info,
+  .user-info div,
+  .user-info div p,
+  .user-info img {
     display: none;
   }
 
   #username {
-    background-color: #fff;
-    border-bottom: 5px solid #bbb;
+    background-color: var(--surface-color);
+    color: var(--on-surface);
+    border-bottom: 5px solid var(--on-surface);
   }
 }
 
 nav ul.show {
-  display:block;
+  display: block;
 }
 
-@media (min-width:768px) { 
+@media (min-width: 768px) {
   #username {
-    background: linear-gradient(to bottom, #eee 0%, #fff 100%);
+    background: var(--menu-gradient);
   }
 }
 
@@ -213,11 +217,10 @@ nav ul.show {
   width: 74px;
   height: 74px;
   margin: 10px;
-  border: 1px solid #bbb;
+  border: 1px solid var(--border-color);
   float: left;
   object-fit: cover;
-  border-radius: 34px;
-  border: 1px solid #333;
+  border-radius: 50%;
 }
 
 .user-info {
