@@ -10,7 +10,7 @@ include "./../../includes/javascript.php"
 </head>
 <body>
 <?php
-include "./../../includes/header.php"
+include "./../../includes/student/header.php"
 ?>
 <main id="hello">
   <div id="timetable" class="cluster">
