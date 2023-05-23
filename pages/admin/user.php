@@ -2,13 +2,13 @@
 <html>
 
 <head>
-    <link rel="stylesheet" type="text/css" href="./../../css/admin/course.css" />
     <?php
     include "./../../includes/styles.php";
     include "./../../includes/javascript.php";
     $mode = $_REQUEST['mode'] ?? 'new';
     $title = "Създаване на потребител";
     ?>
+    <link rel="stylesheet" type="text/css" href="./../../css/admin/course.css" />
     <title><?= $title ?></title>
 </head>
 
@@ -83,24 +83,6 @@ include "./../../includes/admin/header.php";
                 <input type="number" name="ects" class="input-field" />
             </div>
         </div>
-<!---->
-<!--        <div class="fieldsets-wrapper">-->
-<!--            <fieldset class="last-fieldset">-->
-<!--                <legend>Хорариум (общо в часове):</legend>-->
-<!--                <div class="label-input-pair">-->
-<!--                    <span>Лекции:</span>-->
-<!--                    <input type="number" name="lectures" class="input-field" />-->
-<!--                </div>-->
-<!--                <div class="label-input-pair">-->
-<!--                    <span>Семинарни упражнения:</span>-->
-<!--                    <input type="number" name="seminar" class="input-field" />-->
-<!--                </div>-->
-<!--                <div class="label-input-pair">-->
-<!--                    <span>Практически упражнения:</span>-->
-<!--                    <input type="number" name="practical" class="input-field" />-->
-<!--                </div>-->
-<!--            </fieldset>-->
-<!--        </div>-->
 
         <div class="last-row">
             <div class="label-input-pair">

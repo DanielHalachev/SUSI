@@ -7,12 +7,18 @@ body {
 
 main {
   padding: 20px;
+  justify-content: center;
 }
 
 h1 {
   font-weight: bold;
   margin-top: 0;
-  grid-column: 1
+  grid-column: 1;
+  text-align: center;
+}
+
+header {
+  margin-bottom: 50px;
 }
 
 form {
@@ -36,7 +42,7 @@ form {
   margin-right: 10px;
   font-weight: bold;
   flex-basis: 100px;
-  text-align: right;
+  /*text-align: right;*/
 }
 
 .label-input-pair input[type="text"],

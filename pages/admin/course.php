@@ -2,7 +2,6 @@
 <html>
 
 <head>
-  <link rel="stylesheet" type="text/css" href="./../../css/admin/course.css" />
   <?php
   include "./../../includes/styles.php";
   include "./../../includes/javascript.php";
@@ -13,6 +12,7 @@
     "copy" => "Копиране на курс",
   };
   ?>
+  <link rel="stylesheet" type="text/css" href="./../../css/admin/course.css" />
   <title><?= $title ?></title>
 </head>
 

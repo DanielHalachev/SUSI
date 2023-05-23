@@ -16,7 +16,8 @@ include "./../../includes/admin/header.php";
 <?php
 $headers = ['Име', 'Роля', 'Имейл'];
 $users = [
-    ['Павел Атанасов', 'Студент', 'aloda@skolev.com']
+    ['Павел Атанасов', 'Студент', 'aloda@skolev.com'],
+    ['Давид Петров', 'Студент', 'kudeechoveka@skolev.com'],
 ];
 ?>
 
@@ -46,6 +47,7 @@ $users = [
             </thead>
             <tbody>
             <?php foreach ($users as $user):?>
+            <tr>
                 <?php foreach ($user as $td):?>
                     <td><?=$td?></td>
                 <?php endforeach;?>
@@ -54,6 +56,7 @@ $users = [
                     <i class="fa fa-edit" title="Редактирай"></i>
                     <i class="fa fa-copy" title="Копирай"></i>
                 </td>
+            </tr>
             <?php endforeach;?>
             </tbody>
         </table>
