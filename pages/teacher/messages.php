@@ -35,7 +35,7 @@ function displayPreview(id) {
   </head>
   <body>
     <?php
-      include "./../../includes/header.php";
+      include "./../../includes/teacher/header.php";
     ?>
     <main>
       <h1>Съобщения</h1>
