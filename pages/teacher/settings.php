@@ -8,6 +8,15 @@
 
     <link rel="stylesheet" type="text/css" href="../../css/teacher/settings.css"/>
     <script src="./../../js/tabs.js"></script>
+    <script>
+window.addEventListener('DOMContentLoaded', function() {
+  var hash = window.location.hash;
+  if (hash) {
+    var sectionId = hash.substring(1); // Remove the leading '#'
+    openTab(event, sectionId);
+  }
+});
+    </script>
 
     <script>
         window.addEventListener('load', function() {
@@ -384,10 +393,226 @@ include "./../../includes/teacher/header.php"
         <label><input type="checkbox" checked/>промяна в графика</label>
         <label><input type="checkbox"/>промяна на броя записани в избираема дисциплина</label>
     </div>
-    <div id="theme-settings" class="tabcontent">
-        <h2>Тема</h2>
-        <label><input type="checkbox" onchange="toggleTheme()"/>Тъмна тема</label>
-    </div>
+            <div id="theme-settings" class="tabcontent">
+      <h2>Тема</h2>
+
+      <label>Тема:
+      <select id="theme-select" onchange="changeTheme()">
+      <option value="light">Светла</option>
+      <option value="dark">Тъмна</option>
+      <option value="device">От устройството</option>
+      <option value="custom">По Избор</option>
+      </select>
+      </label>
+      
+<!--       <div id="custom-theme" style="display: none;"> -->
+<!--   <label> -->
+<!--     Основен цвят: -->
+<!--     <input type="color" id="primary-color-picker" onchange="setCustomTheme('--primary-color')" value="#ffffff"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Акцентен цвят: -->
+<!--     <input type="color" id="secondary-color-picker" onchange="setCustomTheme('--secondary-color')" value="#C99818"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Фонов цвят: -->
+<!--     <input type="color" id="back-color-picker" onchange="setCustomTheme('--back-color')" value="#eef2c1"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на повърхнината: -->
+<!--     <input type="color" id="surface-color-picker" onchange="setCustomTheme('--surface-color')" value="#ffffff"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на грешка: -->
+<!--     <input type="color" id="error-color-picker" onchange="setCustomTheme('--error-color')" value="#be0000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при основен цвят): -->
+<!--     <input type="color" id="on-primary-picker" onchange="setCustomTheme('--on-primary')" value="#000000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при акцентен цвят): -->
+<!--     <input type="color" id="on-secondary-picker" onchange="setCustomTheme('--on-secondary')" value="#000000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при фонов цвят): -->
+<!--     <input type="color" id="on-background-picker" onchange="setCustomTheme('--on-background')" value="#000000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при цвят на повърхнината): -->
+<!--     <input type="color" id="on-surface-picker" onchange="setCustomTheme('--on-surface')" value="#000000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при цвят на грешка): -->
+<!--     <input type="color" id="on-error-picker" onchange="setCustomTheme('--on-error')" value="#ffffff"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Положителен цвят: -->
+<!--     <input type="color" id="positive-picker" onchange="setCustomTheme('--positive')" value="#005d2f"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Положителен цвят (при навлизане на мишката): -->
+<!--     <input type="color" id="positive-hover-picker" onchange="setCustomTheme('--positive-hover')" value="#007d46"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Отрицателен цвят: -->
+<!--     <input type="color" id="negative-picker" onchange="setCustomTheme('--negative')" value="#be0000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Отрицателен цвят (при навлизане на мишката): -->
+<!--     <input type="color" id="negative-hover-picker" onchange="setCustomTheme('--negative-hover')" value="#d9231a"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Неутрален цвят: -->
+<!--     <input type="color" id="neutral-picker" onchange="setCustomTheme('--neutral')" value="#dedede"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Неутрален цвят (при навлизане на мишката): -->
+<!--     <input type="color" id="neutral-hover-picker" onchange="setCustomTheme('--neutral-hover')" value="#f0f0f0"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при положителен цвят): -->
+<!--     <input type="color" id="on-positive-picker" onchange="setCustomTheme('--on-positive')" value="#ffffff"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при отрицателен цвят): -->
+<!--     <input type="color" id="on-negative-picker" onchange="setCustomTheme('--on-negative')" value="#ffffff"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при неутрален цвят): -->
+<!--     <input type="color" id="on-neutral-picker" onchange="setCustomTheme('--on-neutral')" value="#000000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на заглавията на таблицата: -->
+<!--     <input type="color" id="th-color-picker" onchange="setCustomTheme('--th-color')" value="#eee"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на полетата в таблицата: -->
+<!--     <input type="color" id="td-color-picker" onchange="setCustomTheme('--td-color')" value="#ffffff"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при заглавията на таблицата): -->
+<!--     <input type="color" id="on-th-picker" onchange="setCustomTheme('--on-th')" value="#000000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на текста (при полетата в таблицата): -->
+<!--     <input type="color" id="on-td-picker" onchange="setCustomTheme('--on-td')" value="#000000"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Цвят на границите: -->
+<!--     <input type="color" id="border-color-picker" onchange="setCustomTheme('--border-color')" value="#ccc"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Начален цвят на градиента на менюто: -->
+<!--     <input type="color" id="menu-gradient-start-picker" onchange="setCustomTheme('--menu-gradient-start')" value="#eee"> -->
+<!--   </label> -->
+<!---->
+<!--   <label> -->
+<!--     Краен цвят на градиента на менюто: -->
+<!--     <input type="color" id="menu-gradient-end-picker" onchange="setCustomTheme('--menu-gradient-end')" value="#fff"> -->
+<!--   </label> -->
+<!-- </div> -->
+
+      <div id="custom-theme" style="display: none;">
+  <table>
+    <tr>
+      <td><label for="primary-color-picker">Основен цвят:</label></td>
+      <td><input type="color" id="primary-color-picker" onchange="setCustomTheme('--primary-color')" value="#ffffff"></td>
+    </tr>
+    <tr>
+      <td><label for="secondary-color-picker">Акцентен цвят:</label></td>
+      <td><input type="color" id="secondary-color-picker" onchange="setCustomTheme('--secondary-color')" value="#C99818"></td>
+    </tr>
+    <tr>
+      <td><label for="back-color-picker">Фонов цвят:</label></td>
+      <td><input type="color" id="back-color-picker" onchange="setCustomTheme('--back-color')" value="#eef2c1"></td>
+    </tr>
+    <tr>
+      <td><label for="surface-color-picker">Цвят на компонентите:</label></td>
+      <td><input type="color" id="surface-color-picker" onchange="setCustomTheme('--surface-color')" value="#ffffff"></td>
+    </tr>
+    <tr>
+      <td><label for="error-color-picker">Цвят за грешка:</label></td>
+      <td><input type="color" id="error-color-picker" onchange="setCustomTheme('--error-color')" value="#be0000"></td>
+    </tr>
+    <tr>
+      <td><label for="on-primary-picker">Цвят на текста (върху основен цвят):</label></td>
+      <td><input type="color" id="on-primary-picker" onchange="setCustomTheme('--on-primary')" value="#000000"></td>
+    </tr>
+    <tr>
+      <td><label for="on-secondary-picker">Цвят на текста (върху акцентен цвят):</label></td>
+      <td><input type="color" id="on-secondary-picker" onchange="setCustomTheme('--on-secondary')" value="#000000"></td>
+    </tr>
+    <tr>
+      <td><label for="on-background-picker">Цвят на текста (върху фона):</label></td>
+      <td><input type="color" id="on-background-picker" onchange="setCustomTheme('--on-background')" value="#000000"></td>
+    </tr>
+    <tr>
+      <td><label for="on-surface-picker">Цвят на текста (в компонентите):</label></td>
+      <td><input type="color" id="on-surface-picker" onchange="setCustomTheme('--on-surface')" value="#000000"></td>
+    </tr>
+    <tr>
+      <td><label for="on-error-picker">Цвят на текста (при цвят на грешка):</label></td>
+      <td><input type="color" id="on-error-picker" onchange="setCustomTheme('--on-error')" value="#ffffff"></td>
+    </tr>
+    <tr>
+      <td><label for="neutral-picker">Неутрален цвят:</label></td>
+      <td><input type="color" id="neutral-picker" onchange="setCustomTheme('--neutral')" value="#dedede"></td>
+    </tr>
+    <tr>
+      <td><label for="neutral-hover-picker">Неутрален цвят (при навлизане на мишката):</label></td>
+      <td><input type="color" id="neutral-hover-picker" onchange="setCustomTheme('--neutral-hover')" value="#f0f0f0"></td>
+    </tr>
+    <tr>
+      <td><label for="on-neutral-picker">Цвят на текста (при неутрален цвят):</label></td>
+      <td><input type="color" id="on-neutral-picker" onchange="setCustomTheme('--on-neutral')" value="#000000"></td>
+    </tr>
+    <tr>
+      <td><label for="th-color-picker">Цвят на заглавията на таблицата:</label></td>
+      <td><input type="color" id="th-color-picker" onchange="setCustomTheme('--th-color')" value="#eee"></td>
+    </tr>
+    <tr>
+      <td><label for="td-color-picker">Цвят на полетата в таблицата:</label></td>
+      <td><input type="color" id="td-color-picker" onchange="setCustomTheme('--td-color')" value="#ffffff"></td>
+    </tr>
+    <tr>
+      <td><label for="on-th-picker">Цвят на текста (в заглавията на таблицата):</label></td>
+      <td><input type="color" id="on-th-picker" onchange="setCustomTheme('--on-th')" value="#000000"></td>
+    </tr>
+    <tr>
+      <td><label for="on-td-picker">Цвят на текста (в полетата в таблицата):</label></td>
+      <td><input type="color" id="on-td-picker" onchange="setCustomTheme('--on-td')" value="#000000"></td>
+    </tr>
+    <tr>
+      <td><label for="border-color-picker">Цвят на границите:</label></td>
+      <td><input type="color" id="border-color-picker" onchange="setCustomTheme('--border-color')" value="#ccc"></td>
+    </tr>
+  </table>
+</div>
 </div>
 
 </main>
