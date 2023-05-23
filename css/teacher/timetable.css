@@ -63,3 +63,33 @@ main table thead tr:first-of-type th {
 .both {
   background-color: #ffffcc;
 }
+
+.context-menu, .dialog {
+  position: absolute;
+  background-color: var(--surface-color);
+  color: var(--on-surface);
+  border: 1px solid var(--border-color);
+  padding: 5px;
+}
+
+.context-menu div {
+  cursor: pointer;
+  padding: 5px;
+}
+
+#mobile {
+  display: none;
+}
+
+@media (max-width: 1200px) {
+  #pc {
+    display: none;
+  }
+  #mobile {
+    display: table;
+    table-layout: initial;
+  }
+  #mobile th {
+    text-align: center;
+  }
+}

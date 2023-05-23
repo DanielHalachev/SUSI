@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="bg">
 <head>
-
 <?php
 include "./../../includes/styles.php";
 include "./../../includes/javascript.php"
