@@ -1,20 +1,20 @@
 <!DOCTYPE html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="./../../css/student/grades.css"/>  
+  <link rel="stylesheet" type="text/css" href="./../../css/student/grades.css"/>  
   <?php
     include "./../../includes/styles.php";
     include "./../../includes/javascript.php";
   ?>
-<script src="./../../js/popup.js"></script> 
-<script src="./../../js/columns.js"></script> 
-<script src="./../../js/accordionTable.js"></script> 
-<script src="./../../js/tableFilter.js"></script> 
-<script src="./../../js/tableSort.js"></script> 
+  <script src="./../../js/popup.js"></script> 
+  <script src="./../../js/columns.js"></script> 
+  <script src="./../../js/accordionTable.js"></script> 
+  <script src="./../../js/tableFilter.js"></script> 
+  <script src="./../../js/tableSort.js"></script> 
 </head>
 <body>
   <?php
-    include "./../../includes/header.php";
+    include "./../../includes/student/header.php";
   ?>
 <main>
   <h1>Оценки и кредити</h1>
@@ -49,36 +49,36 @@
           <th colspan="5" onclick="toggleAccordion(1)">Зимен семестър 2020-2021 <span class="fa fa-angle-down"></span></th>
         </tr>
         <tr class="semester1">
-          <td><a>Информатика</a></td>
-          <td data-info="GoodBye">Проф. Димитър Иванов</td>
+          <td><a class="subject" data-subject="Информатика">Информатика</a></td>
+          <td><a class="prof" data-name="Проф. Димитър Иванов">Проф. Димитър Иванов</a></td>
           <td>Редовна</td>
           <td>6</td>
-  <td>5.50</td>
+          <td>5.50</td>
         </tr>
         <tr class="semester1">
-          <td>Английски език</td>
-          <td>Доц. Мария Петрова</td>
+          <td><a class="subject" data-subject="Английски език">Английски език</a></td>
+          <td><a class="prof" data-name="Доц. Мария Петрова">Доц. Мария Петрова</a></td>
           <td>Избираема</td>
           <td>4</td>
           <td>6.00</td>
         </tr>
         <tr class="semester1">
-          <td>История на България</td>
-          <td>Доц. Петър Димитров</td>
+          <td><a class="subject" data-subject="История на България">История на България</a></td>
+          <td><a class="prof" data-name="Доц. Петър Димитров">Доц. Петър Димитров</a></td>
           <td>Редовна</td>
           <td>2</td>
           <td>5.25</td>
         </tr>
         <tr class="semester1">
-          <td>Математика</td>
-          <td>Проф. Георги Илиев</td>
+          <td><a class="subject" data-subject="Математика">Математика</a></td>
+          <td><a class="prof" data-name="Проф. Георги Илиев">Проф. Георги Илиев</a></td>
           <td>Редовна</td>
           <td>6</td>
           <td>5.75</td>
         </tr>
         <tr class="semester1">
-          <td>Социология</td>
-          <td>Доц. Елена Николова</td>
+          <td><a class="subject" data-subject="Социология">Социология</a></td>
+          <td><a class="prof" data-name="Доц. Елена Николова">Доц. Елена Николова</a></td>
           <td>Избираема</td>
           <td>4</td>
           <td>6.00</td>
@@ -87,36 +87,36 @@
           <th colspan="5" onclick="toggleAccordion(2)">Летен семестър 2020-2021 <span class="fa fa-angle-down"></span></th>
         </tr>
         <tr class="semester2">
-          <td>Физика</td>
-          <td>Проф. Иван Иванов</td>
+          <td><a class="subject" data-subject="Физика">Физика</a></td>
+          <td><a class="prof" data-name="Проф. Иван Иванов">Проф. Иван Иванов</a></td>
           <td>Редовна</td>
           <td>6</td>
           <td>5.50</td>
         </tr>
         <tr class="semester2">
-          <td>Анализ на данни</td>
-          <td>Доц. Мария Николова</td>
+          <td><a class="subject" data-subject="Анализ на данни">Анализ на данни</a></td>
+          <td><a class="prof" data-name="Доц. Мария Николова">Доц. Мария Николова</a></td>
           <td>Избираема</td>
           <td>4</td>
           <td>6.00</td>
         </tr>
         <tr class="semester2">
-          <td>Френски език</td>
-          <td>Проф. София Димитрова</td>
+          <td><a class="subject" data-subject="Френски език">Френски език</a></td>
+          <td><a class="prof" data-name="Проф. София Димитрова">Проф. София Димитрова</a></td>
           <td>Избираема</td>
           <td>4</td>
           <td>5.75</td>
         </tr>
         <tr class="semester2">
-          <td>Право</td>
-          <td>Доц. Петър Георгиев</td>
+          <td><a class="subject" data-subject="Право">Право</a></td>
+          <td><a class="prof" data-name="Доц. Петър Георгиев">Доц. Петър Георгиев</a></td>
           <td>Редовна</td>
           <td>6</td>
           <td>6.00</td>
         </tr>
         <tr class="semester2">
-          <td>Комуникационни умения</td>
-          <td>Проф. Мария Илиева</td>
+          <td><a class="subject" data-subject="Комуникационни умения">Комуникационни умения</a></td>
+          <td><a class="prof" data-name="Проф. Мария Илиева">Проф. Мария Илиева</a></td>
           <td>Избираема</td>
           <td>2</td>
           <td>5.50</td>
