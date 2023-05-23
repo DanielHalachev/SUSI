@@ -16,4 +16,15 @@ document.addEventListener("DOMContentLoaded", function() {
       menuOpen = false;
     }
   });
+  var logo = document.querySelector('.logo');
+  const th = localStorage.getItem('theme');
+  if (th){
+    if (th === 'theme-light'){
+      logo.src = "./../../images/logo.png";
+    } else if(th === 'theme-dark'){
+      logo.src = "./../../images/dark-logo.png";
+    } else if(th === 'theme-custom') {
+      logo.src = "./../../images/logo.png";
+    }
+  }
 });

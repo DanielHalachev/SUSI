@@ -64,31 +64,31 @@
                 Моите данни
               </li>
             </a>
-            <a href="./settings.php#health-insurance">
+            <a href="./settings.php?tab=health-insurance">
             <li>
               <span class="fa fa-heart-pulse"></span>
               Здравно осигуряване
             </li>
           </a>
-            <a href="./settings.php#logins">
+            <a href="./settings.php?tab=logins">
               <li>
                 <span class="fa fa-right-to-bracket"></span>
                 Логавания
               </li>
             </a>
-            <a href="./settings.php#card-settings">
+            <a href="./settings.php?tab=card-settings">
               <li>
                 <span class="fa fa-home"></span>
                 Настройки на началната страница
               </li>
             </a>
-            <a href="./settings.php#email-settings">
+            <a href="./settings.php?tab=email-settings">
               <li>
                 <span class="fa fa-bell"></span>
                 Настройки на известията
               </li>
             </a>
-            <a href="./settings.php#theme-settings">
+            <a href="./settings.php?tab=theme-settings">
               <li>
                 <span class="fa fa-circle-half-stroke"></span>
                 Тема
