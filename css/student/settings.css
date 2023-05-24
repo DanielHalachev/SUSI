@@ -133,6 +133,10 @@ main {
   gap: 5px;
 }
 
+#credits table tr td:first-child {
+  text-align: left;
+}
+
 #health-insurance table {
   table-layout: fixed;
 }

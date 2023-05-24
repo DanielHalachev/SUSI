@@ -110,6 +110,7 @@ include "./../../includes/student/header.php"
   </div>
   <div class="tabs">
     <div class="tabline">
+      <button class="neutral tablinks" onclick="openTab(event, 'credits')">Кредити</button>
       <button class="neutral tablinks" onclick="openTab(event, 'taxes')">Такси</button>
       <button class="neutral tablinks" onclick="openTab(event, 'health-insurance')">Здравно осигуряване</button>
       <button class="neutral tablinks" onclick="openTab(event, 'logins')">Логвания</button>
@@ -117,6 +118,71 @@ include "./../../includes/student/header.php"
       <button class="neutral tablinks" onclick="openTab(event, 'email-settings')">Настройки на известията</button>
       <button class="neutral tablinks" onclick="openTab(event, 'theme-settings')">Tема</button>
     </div> 
+    <div id="credits" class="tabcontent">
+    <table>
+  <tr>
+    <th>Група избираеми дисциплини</th>
+    <th>Минимален брой</th>
+    <th>Сегашен брой</th>
+    <th>Кредити досега</th>
+  </tr>
+  <tr>
+    <td>Основи на Компютърните науки</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Ядро на Компютърните науки</td>
+    <td>1</td>
+    <td>1</td>
+    <td>5</td>
+  </tr>
+  <tr>
+    <td>Основи на Компютърните науки и Ядро на Компютърните науки</td>
+    <td>4</td>
+    <td>2</td>
+    <td>10</td>
+  </tr>
+  <tr>
+    <td>Практическо усвояване на компютърните науки</td>
+    <td>2</td>
+    <td>1</td>
+    <td>6</td>
+  </tr>
+  <tr>
+    <td>Математика и Приложна математика</td>
+    <td>2</td>
+    <td>1</td>
+    <td>7</td>
+  </tr>
+  <tr>
+    <td>Математика</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Избираема дисциплина от списък 1</td>
+    <td>1</td>
+    <td>0</td>
+    <td>0</td>
+  </tr>
+  <tr>
+    <td>Други</td>
+    <td>1</td>
+    <td>1</td>
+    <td>4</td>
+  </tr>
+  <tr>
+    <th>ОБЩО</th>
+    <th>13</th>
+    <th>6</th>
+    <th>32/62</th>
+  </tr>
+</table>
+
+    </div>
     <div id="taxes" class="tabcontent">
       <h2>Такси</h2>
       <table>

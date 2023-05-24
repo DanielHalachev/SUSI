@@ -121,6 +121,13 @@
           <td>2</td>
           <td>5.50</td>
         </tr>
+        <tr class="accordion-heading">
+          <th></th>
+          <th></th>
+          <th></th>
+          <th id="sumCredits"></th>
+          <th id="averageGrades"></th>
+        </tr>
       </tbody>
     </table>
   </div>
@@ -128,5 +135,28 @@
 <?php
 include "./../../includes/footer.php";
 ?>
+<script>
+  function updateSummary() {
+    var visibleRows = document.querySelectorAll('tbody tr:not(.accordion-heading):not([style*="display: none"])');
+    var sumCredits = 0;
+    var sumGrades = 0;
+
+    for (var i = 0; i < visibleRows.length; i++) {
+      var credits = parseInt(visibleRows[i].querySelector('td:nth-child(4)').textContent);
+      var grade = parseFloat(visibleRows[i].querySelector('td:nth-child(5)').textContent);
+
+      sumCredits += credits;
+      sumGrades += grade;
+    }
+
+    var averageGrade = visibleRows.length === 0 ? 0 : sumGrades / visibleRows.length;
+
+    document.getElementById('sumCredits').textContent = sumCredits;
+    document.getElementById('averageGrades').textContent = averageGrade.toFixed(2);
+  }
+
+  // Call the updateSummary function when the accordion is toggled or when the page loads
+  document.addEventListener('DOMContentLoaded', updateSummary);
+</script>
 </body>
 </html>

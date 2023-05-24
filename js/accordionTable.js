@@ -25,4 +25,7 @@ function toggleAccordion(semesterNumber) {
       },400); 
     }
   }
+   // updateSummary();
+    setTimeout(updateSummary, 500);
+
 }

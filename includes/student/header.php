@@ -51,7 +51,7 @@
             <a href="./settings.php">
               <li>
                 <span class="fa fa-database"></span>
-                Моите данни
+                Кредити
               </li>
             </a>
             <a href="./settings.php?tab=taxes">
