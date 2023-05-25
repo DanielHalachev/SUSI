@@ -15,7 +15,7 @@ include "./../../includes/admin/header.php";
 ?>
 <main>
   <div class="cluster">
-    <h2 class="cluster-title"><a href="#">Управление на потребители</a></h2>
+    <h2 class="cluster-title"><a href="./users.php">Управление на потребители</a></h2>
     <div class="cluster-content">
       <button>
         <span class="fa fa-user-plus"></span>
@@ -34,30 +34,30 @@ include "./../../includes/admin/header.php";
       </button>
     </div>
   </div>
+  <!-- <div class="cluster"> -->
+  <!--   <h2><a href="#">Съобщения</a></h2> -->
+  <!--   <div class="cluster-content"> -->
+  <!--     <ul class="message-list"> -->
+  <!--       <li class="message"> -->
+  <!--         <a href="#">Добре дошли в курса по Джава</a> -->
+  <!--         <br/><small>Евгений Кръстев</small>, -->
+  <!--         <small>Преди 2 часа</small> -->
+  <!--       </li> -->
+  <!--       <li class="message"> -->
+  <!--         <a href="#">Провеждане на курса по Увод в програмирането</a> -->
+  <!--         <br/><small>Александър Димов</small>, -->
+  <!--         <small>Вчера</small> -->
+  <!--       </li> -->
+  <!--       <li class="message"> -->
+  <!--         <a href="#">Гост-лектор</a> -->
+  <!--         <br/><small>Боян Бончев</small>, -->
+  <!--         <small>19.03 9:00</small> -->
+  <!--       </li> -->
+  <!--     </ul> -->
+  <!--   </div> -->
+  <!--   </div> -->
   <div class="cluster">
-    <h2><a href="#">Съобщения</a></h2>
-    <div class="cluster-content">
-      <ul class="message-list">
-        <li class="message">
-          <a href="#">Добре дошли в курса по Джава</a>
-          <br/><small>Евгений Кръстев</small>,
-          <small>Преди 2 часа</small>
-        </li>
-        <li class="message">
-          <a href="#">Провеждане на курса по Увод в програмирането</a>
-          <br/><small>Александър Димов</small>,
-          <small>Вчера</small>
-        </li>
-        <li class="message">
-          <a href="#">Гост-лектор</a>
-          <br/><small>Боян Бончев</small>,
-          <small>19.03 9:00</small>
-        </li>
-      </ul>
-    </div>
-    </div>
-  <div class="cluster">
-    <h2><a href="#">Управление на курсове</a></h2>
+    <h2><a href="./courses.php">Управление на курсове</a></h2>
     <div class="cluster-content">
       <button>
         <span class="fa fa-file-circle-plus"></span>
@@ -73,7 +73,7 @@ include "./../../includes/admin/header.php";
   </div>
   <!-- TODO  -->
   <div class="cluster" style="flex: 2; min-width: 800px;">
-    <h2><a href="#">Кампания за избираеми дисциплини</a></h2>
+    <h2><a href="./campaigns.php">Кампании за избираеми дисциплини</a></h2>
     <div class="cluster-content">
       <table>
         <thead>
