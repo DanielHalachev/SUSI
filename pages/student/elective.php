@@ -169,13 +169,13 @@ document.addEventListener('DOMContentLoaded', function() {
   </thead>
   <tbody>
     <tr>
-      <td><a class="subject" data-subject="Увод в програмирането">Увод в програмирането</a></td>
+      <td><a class="subject" data-subject="Функционално програмиране">Функционално програмиране</a></td>
       <td><a class="prof" data-name="Доц. д-р Иван Иванов">Доц. д-р Иван Иванов</a></td>
       <td>5</td>
       <td>Изпит/Текуща оценка</td>
       <td>1</td>
       <td>4.6</td>
-      <td><input type="checkbox" /></td>
+      <td><input type="checkbox" checked/></td>
       <td><button class="positive">Записване</button></td>
     </tr>
     <tr>
@@ -229,24 +229,24 @@ document.addEventListener('DOMContentLoaded', function() {
       <td><button class="positive">Записване в опашка</button></td>
     </tr>
     <tr>
-      <td><a class="subject" data-subject="Увод в програмирането">Увод в програмирането</a></td>
-      <td><a class="prof" data-name="Доц. д-р Иван Иванов">Доц. д-р Иван Иванов</a></td>
+      <td><a class="subject" data-subject="Увод в програмирането">Фрактали</a></td>
+      <td><a class="prof" data-name="Доц. д-р Иван Иванов">Доц. Милко Такев</a></td>
       <td>5</td>
       <td>Изпит/Текуща оценка</td>
       <td>1</td>
       <td>4.6</td>
-      <td><input type="checkbox" /></td>
-      <td><button class="positive">Записване</button></td>
+      <td><input type="checkbox" checked/></td>
+      <td><button class="neutral">Записана</button></td>
     </tr>
     <tr>
-      <td><a class="subject" data-subject="Английски език 1">Английски език 1</a></td>
-      <td><a class="prof" data-name="Преп. Мария Петрова">Преп. Мария Петрова</a></td>
+      <td><a class="subject" data-subject="Английски език 1">Увод в статистиката</a></td>
+      <td><a class="prof" data-name="Преп. Мария Петрова">доц. Мая Желязкова</a></td>
       <td>3</td>
       <td>Текуща оценка</td>
       <td>1</td>
       <td>4.3</td>
-      <td><input type="checkbox" /></td>
-      <td><button class="positive">Записване</button></td>
+      <td><input type="checkbox" checked/></td>
+      <td><button class="neutral">Записана</button></td>
     </tr>
   </tbody>
 </table>

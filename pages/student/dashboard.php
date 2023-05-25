@@ -96,10 +96,10 @@ include "./../../includes/student/header.php"
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Програмиране с Java</td>
-            <td class="no-padding"><input type="checkbox"></td>
-          </tr>
+          <!-- <tr> -->
+          <!--   <td>Програмиране с Java</td> -->
+          <!--   <td class="no-padding"><input type="checkbox"></td> -->
+          <!-- </tr> -->
           <tr>
             <td>Фрактали</td>
             <td class="no-padding"><input type="checkbox" checked></td>
