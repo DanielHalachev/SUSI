@@ -14,7 +14,7 @@ include "./../../includes/student/header.php"
 ?>
 <main id="hello">
   <div id="timetable" class="cluster">
-    <h2 class="cluster-title"><a href="#">Разписание на занятията</a></h2>
+    <h2 class="cluster-title"><a href="./timetable.php">Разписание на занятията</a></h2>
     <div class="cluster-content">
       <table>
         <thead>
@@ -60,7 +60,7 @@ include "./../../includes/student/header.php"
     </div>
   </div>
   <div class="cluster">
-    <h2><a href="#">Такси</a></h2>
+    <h2><a href="./settings.php?tab=taxes">Такси</a></h2>
     <div class="cluster-content">
       <table>
         <thead>
@@ -86,7 +86,7 @@ include "./../../includes/student/header.php"
     </div>
   </div>
   <div class="cluster">
-    <h2><a href="#">Отбелязани избираеми дисциплини</a></h2>
+    <h2><a href="./elective.php?filter=marked">Маркирани избираеми дисциплини</a></h2>
     <div class="cluster-content">
       <table>
         <thead>
@@ -117,7 +117,7 @@ include "./../../includes/student/header.php"
     </div>
   </div>
   <div class="cluster">
-    <h2><a href="#">Записани избираеми дисциплини</a></h2>
+    <h2><a href="./elective.php?filter=enrolled">Записани избираеми дисциплини</a></h2>
     <div class="cluster-content">
       <table>
         <thead>
@@ -143,21 +143,21 @@ include "./../../includes/student/header.php"
     </div>
   </div>
   <div class="cluster">
-    <h2><a href="#">Съобщения</a></h2>
+    <h2><a href="./messages.php">Съобщения</a></h2>
     <div class="cluster-content">
       <ul class="message-list">
         <li class="message">
-          <a href="#">Добре дошли в курса по Джава</a>
+          <a href="./messages.php">Добре дошли в курса по Джава</a>
           <br/><small>Евгений Кръстев</small>,
           <small>Преди 2 часа</small>
         </li>
         <li class="message">
-          <a href="#">Провеждане на курса по Увод в програмирането</a>
+          <a href="./messages.php">Провеждане на курса по Увод в програмирането</a>
           <br/><small>Александър Димов</small>,
           <small>Вчера</small>
         </li>
         <li class="message">
-          <a href="#">Гост-лектор</a>
+          <a href="./messages.php">Гост-лектор</a>
           <br/><small>Боян Бончев</small>,
           <small>19.03 9:00</small>
         </li>
@@ -165,7 +165,7 @@ include "./../../includes/student/header.php"
     </div>
     </div>
     <div class="cluster">
-      <h2><a href="#">Оценки</a></h2>
+      <h2><a href="./grades.php">Оценки</a></h2>
       <div class="cluster-content">
         <table>
           <thead>
