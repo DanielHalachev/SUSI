@@ -76,7 +76,7 @@ include "./../../includes/teacher/header.php"
   <h1>Управление на курсове</h1>
   <div class="selectors">
     <select name="year" id="year-select">
-      <option value="instr" disabled selected>Изберете академична година</option>
+      <option value="instr" selected>Всички академичи години</option>
       <option value="option1">2022/2023</option>
       <option value="option2">2021/2022</option>
       <option value="option3">2020/2021</option>
@@ -84,7 +84,7 @@ include "./../../includes/teacher/header.php"
       <option value="option5">2018/2019</option>
     </select>
     <select name="faculty" id="faculty-select">
-      <option value="instr" disabled selected>Изберете факултет</option>
+      <option value="instr" selected>Всички факултети</option>
       <option value="option1">Биологически факултет</option>
       <option value="option2">Филологически класически и нови филологии</option>
       <option value="option3">Факултет по математика и информатика</option>
@@ -93,14 +93,14 @@ include "./../../includes/teacher/header.php"
       <option value="option6">Физически факултет</option>
     </select>
     <select name="oks" id="oks-select">
-      <option value="instr" disabled selected>Изберете ОКС</option>
+      <option value="instr" selected>Всички ОКС</option>
       <option value="option1">Бакалавър</option>
       <option value="option2">Магистър</option>
       <option value="option3">Доктор</option>
       <option value="option4">Друго</option>
     </select>
     <select name="major" id="major-select">
-      <option value="instr" disabled selected>Изберете специалност</option>
+      <option value="instr" selected>Всички специалности</option>
       <option value="option1">Английска филология</option>
       <option value="option2">Биология</option>
       <option value="option3">Биохимия</option>
@@ -112,19 +112,19 @@ include "./../../includes/teacher/header.php"
       <option value="option9">Софтуерно инженерство</option>
     </select>
     <select name="semester" id="semester-select">
-      <option value="instr" disabled selected>Изберете семестър</option>
+      <option value="instr" selected>Всички семестри</option>
       <option value="option1">Зимен</option>
       <option value="option2">Летен</option>
     </select>
     <select name="course" id="course-select">
-      <option value="instr" selected disabled>Изберете дисциплина</option>
+      <option value="instr" selected>Всички дисциплини</option>
       <option value="option1">Вероятности и статистика</option>
       <option value="option2">Математическа статистика</option>
       <option value="option3">Статистика и емпирични методи</option>
       <option value="option4">Теория на вероятностите</option>
       <option value="option5">Увод в статистиката</option>
     </select>
-    <button id="search-button">Търси</button>
+    <button id="search-button">Търсене</button>
   </div>
   <div class="course-details-list">
     <div class="course-details" >

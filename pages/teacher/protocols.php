@@ -18,7 +18,7 @@ include "./../../includes/teacher/header.php"
   <h2>За <span style="font-weight: bold">2022/2023 юнска </span> сесия</h2>
   <div class="selectors">
     <select name="protocol-number" id="protocol-number-select">
-      <option value="instr" disabled selected>Изберете № на протокол</option>
+      <option value="instr" selected>Всички № на протокол</option>
       <option value="option1">П874</option>
       <option value="option2">П63</option>
       <option value="option3">П881</option>
@@ -26,7 +26,7 @@ include "./../../includes/teacher/header.php"
       <option value="option5">П1049</option>
     </select>
     <select name="faculty" id="faculty-select">
-      <option value="instr" disabled selected>Изберете факултет</option>
+      <option value="instr" selected>Всички факултети</option>
       <option value="option1">Биологически факултет</option>
       <option value="option2">Филологически класически и нови филологии</option>
       <option value="option3">Факултет по математика и информатика</option>
@@ -35,14 +35,14 @@ include "./../../includes/teacher/header.php"
       <option value="option6">Физически факултет</option>
     </select>
     <select name="oks" id="oks-select">
-      <option value="instr" disabled selected>Изберете ОКС</option>
+      <option value="instr" selected>Всички ОКС</option>
       <option value="option1">Бакалавър</option>
       <option value="option2">Магистър</option>
       <option value="option3">Доктор</option>
       <option value="option4">Друго</option>
     </select>
     <select name="major" id="major-select">
-<option value="instr" disabled selected>Изберете специалност</option>
+<option value="instr" selected>Всички специалности</option>
 <option value="option1">Английска филология</option>
 <option value="option2">Биология</option>
       <option value="option3">Биохимия</option>
@@ -54,21 +54,21 @@ include "./../../includes/teacher/header.php"
       <option value="option9">Софтуерно инженерство</option>
     </select>
     <select name="stream" id="stream-select">
-      <option value="instr" selected disabled>Изберете поток</option>
+      <option value="instr" selected>Всички потоци</option>
       <option value="option1">-</option>
       <option value="option2">I</option>
       <option value="option3">II</option>
       <option value="option4">III</option>
     </select>
     <select name="course" id="course-select">
-      <option value="instr" selected disabled>Изберете дисциплина</option>
+      <option value="instr" selected>Всички дисциплини</option>
       <option value="option1">Вероятности и статистика</option>
       <option value="option2">Математическа статистика</option>
       <option value="option3">Статистика и емпирични методи</option>
       <option value="option4">Теория на вероятностите</option>
       <option value="option5">Увод в статистиката</option>
     </select>
-    <button id="search-button">Търси</button>
+    <button id="search-button">Търсене</button>
 </div>
   <h2 id="protocol-name">СИ: ЗД
     <span style="font-weight: bold">Статистика и емпирични методи</span> 
