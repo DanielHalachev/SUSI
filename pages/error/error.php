@@ -44,7 +44,7 @@ switch(getenv("REDIRECT_STATUS"))
 <html lang="bg">
 <head>
 
-<link rel="stylesheet" type="text/css" href="./../../css/error.css"/>
+<link rel="stylesheet" type="text/css" href="./../../css/common/error.css"/>
 <?php
 include "./../../includes/styles.php";
 include "./../../includes/javascript.php";
@@ -66,7 +66,7 @@ include "./../../includes/javascript.php";
       <p><?PHP echo($explanation); ?></p>
       <br/>
       <br/>
-      <button>Към началната страница</button>
+      <button onclick="window.location = './../login/login.php'">Към началната страница</button>
     </div>
   </main>
 <?php
