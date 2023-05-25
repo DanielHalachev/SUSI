@@ -197,7 +197,7 @@ include "./../../includes/teacher/header.php"
         dialog.style.left = event.clientX + "px";
         dialog.style.top = event.clientY + "px";
         var dayLabel = document.createElement("label");
-        dayLabel.innerText = "Select Day:";
+        dayLabel.innerText = "Изберете ден:";
         
         var daySelect = document.createElement("select");
         days.forEach(function (day) {
@@ -208,7 +208,7 @@ include "./../../includes/teacher/header.php"
         });
         
         var hourLabel = document.createElement("label");
-        hourLabel.innerText = "Select Hour:";
+        hourLabel.innerText = "Изберете час:";
         
         var hourSelect = document.createElement("select");
         hours.forEach(function (hour) {
@@ -219,7 +219,7 @@ include "./../../includes/teacher/header.php"
         });
         
         var submitButton = document.createElement("button");
-        submitButton.innerText = "Submit";
+        submitButton.innerText = "Преместване";
         submitButton.addEventListener("click", function () {
           var selectedDay = daySelect.value;
           var selectedHour = hourSelect.value;
