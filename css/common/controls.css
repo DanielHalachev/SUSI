@@ -1,3 +1,7 @@
+:root {
+  scrollbar-color: var(--secondary-color);
+}
+
 /* Label */
 label {
   color: var(--on-surface);
@@ -36,6 +40,7 @@ input[type="search"]{
 input[type="checkbox"]{
   appearance: none;
   -webkit-appearance: none;
+  -moz-appearance: none;
   margin: 0px auto;
   width: 1.5em;
   height: 1.5em;
